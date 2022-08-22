@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Aniket Post1",
-            "content": "“This is Aniket’s first jupyter notebook post!” .",
+            "content": "toc: true layout: post description: “Aniket’s first jupyter notebook post!” categories: [markdown] title: First Post .",
             "url": "https://anicricket.github.io/automatic-spork/2022/08/22/aniket-post1.html",
             "relUrl": "/2022/08/22/aniket-post1.html",
             "date": " • Aug 22, 2022"
