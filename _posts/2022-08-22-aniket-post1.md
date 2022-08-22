@@ -1,4 +1,2 @@
 "This is Aniket's first jupyter notebook post!"
 
-image: https://user-images.githubusercontent.com/91163802/186026775-9b78aec6-3cd2-498f-b951-5b3c574a953c.png
-
