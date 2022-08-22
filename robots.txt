@@ -1,1 +1,1 @@
-Sitemap: https://fastpages.fast.ai/sitemap.xml
+Sitemap: https://anicricket.github.io/automatic-spork/sitemap.xml
