@@ -51,7 +51,7 @@
   
       ,"page1": {
           "title": "About Aniket",
-          "content": "This blog is made by Aniket Chakradeo .",
+          "content": "This blog is made by **Aniket Chakradeo .",
           "url": "https://anicricket.github.io/automatic-spork/about/",
           "relUrl": "/about/",
           "date": ""
