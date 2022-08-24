@@ -2,7 +2,7 @@
   
     
         "post0": {
-            "title": "Title",
+            "title": "Example python program",
             "content": "from datetime import date print(&quot;Hello World!&quot;) today = date.today() print(&quot;Today&#39;s date:&quot;, today) . Hello World! Today&#39;s date: 2022-08-24 .",
             "url": "https://anicricket.github.io/automatic-spork/2022/08/23/firstnotebook.html",
             "relUrl": "/2022/08/23/firstnotebook.html",
