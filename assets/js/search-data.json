@@ -4,9 +4,9 @@
         "post0": {
             "title": "Example python program",
             "content": "from datetime import date print(&quot;Hello World!&quot;) today = date.today() print(&quot;Today&#39;s date:&quot;, today) . Hello World! Today&#39;s date: 2022-08-24 .",
-            "url": "https://anicricket.github.io/automatic-spork/2022/08/24/firstnotebook.html",
-            "relUrl": "/2022/08/24/firstnotebook.html",
-            "date": " • Aug 24, 2022"
+            "url": "https://anicricket.github.io/automatic-spork/2022/08/25/firstnotebook.html",
+            "relUrl": "/2022/08/25/firstnotebook.html",
+            "date": " • Aug 25, 2022"
         }
         
     
@@ -15,9 +15,9 @@
         ,"post1": {
             "title": "Test Bash script",
             "content": "echo &quot;Hello World&quot; . Hello World .",
-            "url": "https://anicricket.github.io/automatic-spork/2022/08/24/bashnotebook.html",
-            "relUrl": "/2022/08/24/bashnotebook.html",
-            "date": " • Aug 24, 2022"
+            "url": "https://anicricket.github.io/automatic-spork/2022/08/25/bashnotebook.html",
+            "relUrl": "/2022/08/25/bashnotebook.html",
+            "date": " • Aug 25, 2022"
         }
         
     
