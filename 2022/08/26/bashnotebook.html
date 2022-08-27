@@ -396,12 +396,28 @@ drwxr-xr-x  3 aniket  staff       96 Aug 26 15:21 my_icons
 <div class=" highlight hl-bash"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;Navigate to project, then navigate to area wwhere files were cloned&quot;</span>
 
 <span class="nb">cd</span> <span class="nv">$project</span>
+
 <span class="nb">echo</span> <span class="s2">&quot;show the contents of README.md&quot;</span>
 <span class="nb">echo</span> <span class="s2">&quot;&quot;</span>
 
-cat README.md
-<span class="nb">echo</span> <span class="s2">&quot;&quot;</span>
-<span class="nb">echo</span> <span class="s2">&quot;end of README.md&quot;</span>
+<span class="nb">echo</span> <span class="s2">&quot;Check if README.md exists&quot;</span>
+<span class="k">if</span> <span class="o">[</span> ! -d <span class="nv">$project</span> <span class="o">]</span>
+<span class="k">then</span>
+    <span class="nb">echo</span> <span class="s2">&quot;Project dir does not exist&quot;</span>
+<span class="k">else</span>
+    <span class="nb">echo</span> <span class="s2">&quot;Project dir exists&quot;</span>
+<span class="k">fi</span>
+<span class="nb">cd</span> <span class="nv">$project</span>
+
+<span class="k">if</span> <span class="o">[</span> -f <span class="s2">&quot;README.md&quot;</span> <span class="o">]</span>
+<span class="k">then</span>
+    <span class="nb">echo</span> <span class="s2">&quot;README.md exists&quot;</span>
+    cat README.md
+    <span class="nb">echo</span> <span class="s2">&quot;&quot;</span>
+    <span class="nb">echo</span> <span class="s2">&quot;end of README.md&quot;</span>
+<span class="k">else</span>
+    <span class="nb">echo</span> <span class="s2">&quot;README DOES NOT EXIST&quot;</span>
+<span class="k">fi</span>
 </pre></div>
 
     </div>
@@ -417,6 +433,10 @@ cat README.md
 <pre>Navigate to project, then navigate to area wwhere files were cloned
 show the contents of README.md
 
+Project dir = /Users/aniket/bashScriptTest/automatic-spork
+Check if README.md exists
+Project dir exists
+README.md exists
 [//]: # (This template replaces README.md when someone creates a new repo with the fastpages template.)
 
 ![](https://github.com/AniCricKet/automatic-spork/workflows/CI/badge.svg) 
@@ -471,7 +491,7 @@ end of README.md
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;Show the shell environment variables, key on left of equal value on right&quot;</span>
+<div class=" highlight hl-bash"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;Show the shell environment variables, key on left of equal, value on right&quot;</span>
 <span class="nb">echo</span> <span class="s2">&quot;&quot;</span>
 
 env
@@ -487,28 +507,23 @@ env
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Show the shell environment variables, key on left of equal value on right
+<pre>Show the shell environment variables, key on left of equal, value on right
 
-VSCODE_CLI=1
-TERM_PROGRAM=Apple_Terminal
 SHELL=/bin/zsh
-TERM=xterm-256color
 TMPDIR=/var/folders/ts/xl0x3s3x4d124txp915hsjwh0000gp/T/
 CONDA_SHLVL=1
 PYTHONUNBUFFERED=1
-TERM_PROGRAM_VERSION=445
 CONDA_PROMPT_MODIFIER=(base) 
-OLDPWD=/Users/aniket/bashScriptTest/automatic-spork/_notebooks
+OLDPWD=/Users/aniket/bashScriptTest/automatic-spork
 ORIGINAL_XDG_CURRENT_DESKTOP=undefined
 MallocNanoZone=0
-TERM_SESSION_ID=3425DA43-DE86-4B86-9323-4063953E42C5
 PYTHONIOENCODING=utf-8
 USER=aniket
 COMMAND_MODE=unix2003
 CONDA_EXE=/Users/aniket/opt/anaconda3/bin/conda
 SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.HOKMo7HKG8/Listeners
 __CF_USER_TEXT_ENCODING=0x1F6:0x0:0x0
-JPY_PARENT_PID=75499
+JPY_PARENT_PID=81461
 PAGER=cat
 VSCODE_AMD_ENTRYPOINT=vs/workbench/api/node/extensionHostProcess
 ELECTRON_RUN_AS_NODE=1
@@ -518,30 +533,26 @@ PATH=/Users/aniket/opt/anaconda3/bin:/Users/aniket/opt/anaconda3/condabin:/Libra
 CONDA_PREFIX=/Users/aniket/opt/anaconda3
 __CFBundleIdentifier=com.microsoft.VSCode
 PWD=/Users/aniket/bashScriptTest/automatic-spork
-notebooks=/Users/aniket/bashScriptTest/automatic-spork/_notebooks
 VSCODE_HANDLES_UNCAUGHT_ERRORS=true
-ELECTRON_NO_ATTACH_CONSOLE=1
-LANG=en_US.UTF-8
 project_repo=https://github.com/AniCricKet/automatic-spork.git
 project=/Users/aniket/bashScriptTest/automatic-spork
 project_dir=/Users/aniket/bashScriptTest
 XPC_FLAGS=0x0
 PS1=[PEXP\[\]ECT_PROMPT&gt;
-XPC_SERVICE_NAME=0
 _CE_M=
+XPC_SERVICE_NAME=0
+SHLVL=1
 HOME=/Users/aniket
-SHLVL=3
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL=1
 VSCODE_NLS_CONFIG={&#34;locale&#34;:&#34;en-us&#34;,&#34;availableLanguages&#34;:{},&#34;_languagePackSupport&#34;:true}
 PYTHONPATH=/Users/aniket/.vscode/extensions/ms-toolsai.jupyter-2022.7.1102252217/pythonFiles:/Users/aniket/.vscode/extensions/ms-toolsai.jupyter-2022.7.1102252217/pythonFiles/lib/python
-LOGNAME=aniket
 CONDA_PYTHON_EXE=/Users/aniket/opt/anaconda3/bin/python
+LOGNAME=aniket
+LC_CTYPE=UTF-8
 VSCODE_IPC_HOOK=/Users/aniket/Library/Application Support/Code/1.70.2-main.sock
 VSCODE_CODE_CACHE_PATH=/Users/aniket/Library/Application Support/Code/CachedData/e4503b30fc78200f846c62cf8091b76ff5547662
 CONDA_DEFAULT_ENV=base
-VSCODE_PID=62491
-posts=/Users/aniket/bashScriptTest/automatic-spork/_posts
-VSCODE_CWD=/Users/aniket/vscode/automatic-spork
+VSCODE_PID=81391
+VSCODE_CWD=/
 _=/usr/bin/env
 </pre>
 </div>
