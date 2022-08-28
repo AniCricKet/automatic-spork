@@ -1,7 +1,7 @@
 ---
 layout: page
-permalink: /Vocabulary/
-title: Vocabulary
+permalink: /Notes/
+title: Notes
 --- 
 
 # Notes
