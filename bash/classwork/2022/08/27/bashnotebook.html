@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      4 min read
+      6 min read
     
 </span></p>
 
@@ -633,6 +633,97 @@ look at config file
 	remote = origin
 	merge = refs/heads/master
 </pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Make-a-file-within-Bash">Make a file within Bash<a class="anchor-link" href="#Make-a-file-within-Bash"> </a></h1>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-bash"><pre><span></span><span class="nb">cd</span> /tmp
+
+<span class="nv">file</span><span class="o">=</span><span class="s2">&quot;sample.md&quot;</span>
+<span class="k">if</span> <span class="o">[</span> -f <span class="s2">&quot;</span><span class="nv">$file</span><span class="s2">&quot;</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+    rm <span class="nv">$file</span>
+<span class="k">fi</span>
+
+tee -a <span class="nv">$file</span> &gt;/dev/null <span class="s">&lt;&lt;EOF</span>
+<span class="s"># Show Generated Markdown</span>
+<span class="s">This introductory paragraph and this line and the title above are generated using tee with the standard input (&lt;&lt;) redirection operator.</span>
+<span class="s">- This bulleted element is still part of the tee body.</span>
+<span class="s">EOF</span>
+
+<span class="nb">echo</span> <span class="s2">&quot;- This bulleted element and lines below are generated using echo with standard output (&gt;&gt;) redirection operator.&quot;</span> &gt;&gt; <span class="nv">$file</span>
+<span class="nb">echo</span> <span class="s2">&quot;- The list definition, as is, is using space to seperate lines.  Thus the use of commas and hyphens in output.&quot;</span> &gt;&gt; <span class="nv">$file</span>
+<span class="nv">actions</span><span class="o">=(</span><span class="s2">&quot;ls,list-directory&quot;</span> <span class="s2">&quot;cd,change-directory&quot;</span> <span class="s2">&quot;pwd,present-working-directory&quot;</span> <span class="s2">&quot;if-then-fi,test-condition&quot;</span> <span class="s2">&quot;env,bash-environment-variables&quot;</span> <span class="s2">&quot;cat,view-file-contents&quot;</span> <span class="s2">&quot;tee,write-to-output&quot;</span> <span class="s2">&quot;echo,display-content-of-string&quot;</span> <span class="s2">&quot;echo_text_&gt;\$file,write-content-to-file&quot;</span> <span class="s2">&quot;echo_text_&gt;&gt;\$file,append-content-to-file&quot;</span><span class="o">)</span>
+<span class="k">for</span> action in <span class="si">${</span><span class="nv">actions</span><span class="p">[@]</span><span class="si">}</span><span class="p">;</span> <span class="k">do</span>  <span class="c1"># for loop is very similar to other language, though [@], semi-colon, do are new</span>
+  <span class="nv">action</span><span class="o">=</span><span class="si">${</span><span class="nv">action</span><span class="p">//-/ </span><span class="si">}</span>  <span class="c1"># convert dash to space</span>
+  <span class="nv">action</span><span class="o">=</span><span class="si">${</span><span class="nv">action</span><span class="p">//,/: </span><span class="si">}</span> <span class="c1"># convert comma to colon</span>
+  <span class="nv">action</span><span class="o">=</span><span class="si">${</span><span class="nv">action</span><span class="p">//_text_/ </span><span class="se">\&quot;</span><span class="nv">sample</span><span class="p"> text</span><span class="se">\&quot;</span><span class="p"> </span><span class="si">}</span> <span class="c1"># convert _text_ to sample text, note escape character \ to avoid &quot;&quot; having meaning</span>
+  <span class="nb">echo</span> <span class="s2">&quot;    - </span><span class="si">${</span><span class="nv">action</span><span class="p">//-/ </span><span class="si">}</span><span class="s2">&quot;</span> &gt;&gt; <span class="nv">$file</span>  <span class="c1"># echo is redirected to file with &gt;&gt;</span>
+<span class="k">done</span>
+
+<span class="nb">echo</span> <span class="s2">&quot;&quot;</span>
+<span class="nb">echo</span> <span class="s2">&quot;File listing and status&quot;</span>
+ls -l <span class="nv">$file</span> <span class="c1"># list file</span>
+wc <span class="nv">$file</span>   <span class="c1"># show words</span>
+<span class="nb">export</span> <span class="nv">TERM</span><span class="o">=</span>ansi
+mdless <span class="nv">$file</span>  <span class="c1"># this requires installation, but renders markown from terminal</span>
+
+rm <span class="nv">$file</span>  <span class="c1"># clean up termporary file</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+File listing and status
+-rw-r--r--  1 aniket  wheel  809 Aug 27 18:11 sample.md
+      15     132     809 sample.md
+
+<span class="ansi-black-intense-fg ansi-white-bg ansi-bold">Show Generated Markdown </span><span class="ansi-black-fg ansi-white-bg">========================================================</span>
+
+This introductory paragraph and this line and the title above are generated
+using tee with the standard input (&lt;&lt;) redirection operator.
+<span class="ansi-red-intense-fg ansi-bold">- </span><span class="ansi-white-intense-fg">This </span><span class="ansi-white-intense-fg">bulleted </span><span class="ansi-white-intense-fg">element </span><span class="ansi-white-intense-fg">is </span><span class="ansi-white-intense-fg">still </span><span class="ansi-white-intense-fg">part </span><span class="ansi-white-intense-fg">of </span><span class="ansi-white-intense-fg">the </span><span class="ansi-white-intense-fg">tee </span><span class="ansi-white-intense-fg">body.
+</span><span class="ansi-red-intense-fg ansi-bold">- </span><span class="ansi-white-intense-fg">This </span><span class="ansi-white-intense-fg">bulleted </span><span class="ansi-white-intense-fg">element </span><span class="ansi-white-intense-fg">and </span><span class="ansi-white-intense-fg">lines </span><span class="ansi-white-intense-fg">below </span><span class="ansi-white-intense-fg">are </span><span class="ansi-white-intense-fg">generated </span><span class="ansi-white-intense-fg">using </span><span class="ansi-white-intense-fg">echo </span><span class="ansi-white-intense-fg">with </span><span class="ansi-white-intense-fg">standard
+</span><span class="ansi-white-intense-fg">output </span><span class="ansi-white-intense-fg">(&gt;&gt;) </span><span class="ansi-white-intense-fg">redirection </span><span class="ansi-white-intense-fg">operator.
+</span><span class="ansi-red-intense-fg ansi-bold">- </span><span class="ansi-white-intense-fg">The </span><span class="ansi-white-intense-fg">list </span><span class="ansi-white-intense-fg">definition, </span><span class="ansi-white-intense-fg">as </span><span class="ansi-white-intense-fg">is, </span><span class="ansi-white-intense-fg">is </span><span class="ansi-white-intense-fg">using </span><span class="ansi-white-intense-fg">space </span><span class="ansi-white-intense-fg">to </span><span class="ansi-white-intense-fg">seperate </span><span class="ansi-white-intense-fg">lines. </span><span class="ansi-white-intense-fg">Thus </span><span class="ansi-white-intense-fg">the </span><span class="ansi-white-intense-fg">use </span><span class="ansi-white-intense-fg">of
+</span><span class="ansi-white-intense-fg">commas </span><span class="ansi-white-intense-fg">and </span><span class="ansi-white-intense-fg">hyphens </span><span class="ansi-white-intense-fg">in </span><span class="ansi-white-intense-fg">output.
+      </span><span class="ansi-red-intense-fg ansi-bold">- </span><span class="ansi-white-intense-fg">ls: </span><span class="ansi-white-intense-fg">list </span><span class="ansi-white-intense-fg">directory
+      </span><span class="ansi-red-intense-fg ansi-bold">- </span><span class="ansi-white-intense-fg">cd: </span><span class="ansi-white-intense-fg">change </span><span class="ansi-white-intense-fg">directory
+      </span><span class="ansi-red-intense-fg ansi-bold">- </span><span class="ansi-white-intense-fg">pwd: </span><span class="ansi-white-intense-fg">present </span><span class="ansi-white-intense-fg">working </span><span class="ansi-white-intense-fg">directory
+      </span><span class="ansi-red-intense-fg ansi-bold">- </span><span class="ansi-white-intense-fg">if </span><span class="ansi-white-intense-fg">then </span><span class="ansi-white-intense-fg">fi: </span><span class="ansi-white-intense-fg">test </span><span class="ansi-white-intense-fg">condition
+      </span><span class="ansi-red-intense-fg ansi-bold">- </span><span class="ansi-white-intense-fg">env: </span><span class="ansi-white-intense-fg">bash </span><span class="ansi-white-intense-fg">environment </span><span class="ansi-white-intense-fg">variables
+      </span><span class="ansi-red-intense-fg ansi-bold">- </span><span class="ansi-white-intense-fg">cat: </span><span class="ansi-white-intense-fg">view </span><span class="ansi-white-intense-fg">file </span><span class="ansi-white-intense-fg">contents
+      </span><span class="ansi-red-intense-fg ansi-bold">- </span><span class="ansi-white-intense-fg">tee: </span><span class="ansi-white-intense-fg">write </span><span class="ansi-white-intense-fg">to </span><span class="ansi-white-intense-fg">output
+      </span><span class="ansi-red-intense-fg ansi-bold">- </span><span class="ansi-white-intense-fg">echo: </span><span class="ansi-white-intense-fg">display </span><span class="ansi-white-intense-fg">content </span><span class="ansi-white-intense-fg">of </span><span class="ansi-white-intense-fg">string
+      </span><span class="ansi-red-intense-fg ansi-bold">- </span><span class="ansi-white-intense-fg">echo </span><span class="ansi-white-intense-fg">&#34;sample </span><span class="ansi-white-intense-fg">text&#34; </span><span class="ansi-white-intense-fg">&gt;$file: </span><span class="ansi-white-intense-fg">write </span><span class="ansi-white-intense-fg">content </span><span class="ansi-white-intense-fg">to </span><span class="ansi-white-intense-fg">file
+      </span><span class="ansi-red-intense-fg ansi-bold">- </span><span class="ansi-white-intense-fg">echo </span><span class="ansi-white-intense-fg">&#34;sample </span><span class="ansi-white-intense-fg">text&#34; </span><span class="ansi-white-intense-fg">&gt;&gt;$file: </span><span class="ansi-white-intense-fg">append </span><span class="ansi-white-intense-fg">content </span><span class="ansi-white-intense-fg">to </span><span class="ansi-white-intense-fg">file
+
+</span></pre>
 </div>
 </div>
 
