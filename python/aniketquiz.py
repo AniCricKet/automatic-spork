@@ -13,7 +13,7 @@ def question_with_response(prompt):
 questions = 3
 correct = 0
 
-print('Hello, ' + getpass.getuser() + " running " + sys.executable)
+print('Welcome to my quiz, ' + getpass.getuser() + " running " + sys.executable)
 print("You will be asked " + str(questions) + " questions.")
 question_and_answer("Are you ready to take a test?")
 
