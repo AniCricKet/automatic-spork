@@ -73,26 +73,48 @@
   
 
   
-  
-
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
+      ,"page3": {
+          "title": "Vocabulary",
+          "content": "Notes . Python commands to know . def() - defines a function | print() - prints the string or variable within the parentheses | import - imports a library and variables from within the library | .",
+          "url": "https://anicricket.github.io/automatic-spork/Vocabulary/",
+          "relUrl": "/Vocabulary/",
+          "date": ""
+      }
+      
   
 
   
   
 
   
-      ,"page10": {
+
+  
+  
+
+  
+
+  
+      ,"page8": {
+          "title": "Vocabulary",
+          "content": "Vocab . Common terminal commands: . ls: list files in a directory | cd: change directory | pwd: print working directory | .",
+          "url": "https://anicricket.github.io/automatic-spork/Vocabulary/",
+          "relUrl": "/Vocabulary/",
+          "date": ""
+      }
+      
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+      ,"page12": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://anicricket.github.io/automatic-spork/robots.txt",
