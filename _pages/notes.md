@@ -1,3 +1,9 @@
+---
+layout: page
+permalink: /Vocabulary/
+title: Vocabulary
+--- 
+
 # Notes
 
 ## Python commands to know

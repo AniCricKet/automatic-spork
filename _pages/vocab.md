@@ -1,3 +1,9 @@
+---
+layout: page
+permalink: /Vocabulary/
+title: Vocabulary
+--- 
+
 # Vocab
 
 ## Common terminal commands:
