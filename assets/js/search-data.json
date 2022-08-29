@@ -106,6 +106,17 @@
   
 
   
+      ,"page4": {
+          "title": "English",
+          "content": "Here is my english class syllabus .",
+          "url": "https://anicricket.github.io/automatic-spork/p4-english/",
+          "relUrl": "/p4-english/",
+          "date": ""
+      }
+      
+  
+
+  
   
 
   
@@ -116,7 +127,7 @@
   
 
   
-      ,"page8": {
+      ,"page9": {
           "title": "Vocabulary",
           "content": "Vocab . Common terminal commands: . ls: list files in a directory | cd: change directory | pwd: print working directory | . Python important commands . def() - defines a function | print() - prints the string or variable within the parentheses | import - imports a library and variables from within the library | .",
           "url": "https://anicricket.github.io/automatic-spork/Vocabulary/",
@@ -136,7 +147,7 @@
   
 
   
-      ,"page12": {
+      ,"page13": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://anicricket.github.io/automatic-spork/robots.txt",
