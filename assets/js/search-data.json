@@ -97,7 +97,7 @@
   
       ,"page3": {
           "title": "Notes",
-          "content": "Notes . Python commands to know . def() - defines a function | print() - prints the string or variable within the parentheses | import - imports a library and variables from within the library | .",
+          "content": "Notes/Important takeaways . Week 0 - I learned how to install all the software required for coding, and basics of VSCode and Github. I also learned how to link jupyter notebooks to my blog. . Week 1 - This week taught me how to personalize my blog. I decided to make mine soccer themed, and so I applied the lessons of how to insert images. I also learned how to use bash, and some basics of bash. .",
           "url": "https://anicricket.github.io/automatic-spork/Notes/",
           "relUrl": "/Notes/",
           "date": ""
@@ -118,7 +118,7 @@
   
       ,"page8": {
           "title": "Vocabulary",
-          "content": "Vocab . Common terminal commands: . ls: list files in a directory | cd: change directory | pwd: print working directory | .",
+          "content": "Vocab . Common terminal commands: . ls: list files in a directory | cd: change directory | pwd: print working directory | . Python important commands . def() - defines a function | print() - prints the string or variable within the parentheses | import - imports a library and variables from within the library | .",
           "url": "https://anicricket.github.io/automatic-spork/Vocabulary/",
           "relUrl": "/Vocabulary/",
           "date": ""
