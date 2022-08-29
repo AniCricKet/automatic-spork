@@ -4,10 +4,8 @@ permalink: /Notes/
 title: Notes
 --- 
 
-# Notes
+# Notes/Important takeaways
 
-## Python commands to know
+Week 0 - I learned how to install all the software required for coding, and basics of VSCode and Github. I also learned how to link jupyter notebooks to my blog.
 
-- def() - defines a function
-- print() - prints the string or variable within the parentheses
-- import - imports a library and variables from within the library
+Week 1 - This week taught me how to personalize my blog. I decided to make mine soccer themed, and so I applied the lessons of how to insert images. I also learned how to use bash, and some basics of bash.
