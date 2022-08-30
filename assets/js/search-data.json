@@ -115,24 +115,24 @@
   
 
   
-
-  
-      ,"page3": {
-          "title": "Notes",
-          "content": "Notes/Important takeaways . Week 0 - I learned how to install all the software required for coding, and basics of VSCode and Github. I also learned how to link jupyter notebooks to my blog. . Week 1 - This week taught me how to personalize my blog. I decided to make mine soccer themed, and so I applied the lessons of how to insert images. I also learned how to use bash, and some basics of bash. .",
-          "url": "https://anicricket.github.io/automatic-spork/Notes/",
-          "relUrl": "/Notes/",
+      ,"page2": {
+          "title": "English",
+          "content": "Here is my english class syllabus . Here’s my graphic organizer for my essay . And here is my final essay .",
+          "url": "https://anicricket.github.io/automatic-spork/p4-english/",
+          "relUrl": "/p4-english/",
           "date": ""
       }
       
   
 
   
+
+  
       ,"page4": {
-          "title": "English",
-          "content": "Here is my english class syllabus . Here’s my graphic organizer for my essay . And here is my final essay .",
-          "url": "https://anicricket.github.io/automatic-spork/p4-english/",
-          "relUrl": "/p4-english/",
+          "title": "Notes",
+          "content": "Notes/Important takeaways . Week 0 - I learned how to install all the software required for coding, and basics of VSCode and Github. I also learned how to link jupyter notebooks to my blog. . Week 1 - This week taught me how to personalize my blog. I decided to make mine soccer themed, and so I applied the lessons of how to insert images. I also learned how to use bash, and some basics of bash. .",
+          "url": "https://anicricket.github.io/automatic-spork/Notes/",
+          "relUrl": "/Notes/",
           "date": ""
       }
       
