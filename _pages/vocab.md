@@ -4,8 +4,6 @@ permalink: /Vocabulary/
 title: Vocabulary
 --- 
 
-# Vocab
-
 ## Common terminal commands:
 
 - ls: list files in a directory
