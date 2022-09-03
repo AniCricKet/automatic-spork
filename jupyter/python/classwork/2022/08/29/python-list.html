@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      3 min read
     
 </span></p>
 
@@ -298,7 +298,9 @@ Soham Kamat
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">reverse_function</span><span class="p">(</span><span class="n">string</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">string</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
 
+<span class="c1"># prints string normally</span>
 <span class="n">string</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter a word or phrase:&quot;</span><span class="p">)</span>
+<span class="c1"># prints same string backwards, using the ::-1</span>
 <span class="n">mytxt</span> <span class="o">=</span> <span class="n">reverse_function</span><span class="p">(</span><span class="n">string</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">string</span><span class="p">)</span>
@@ -404,6 +406,9 @@ t
     <span class="s2">&quot;How many grams are in 25 kilograms?&quot;</span><span class="p">:</span> <span class="s2">&quot;25000&quot;</span><span class="p">,</span>
     <span class="s2">&quot;What is KHDUDCM used for?&quot;</span><span class="p">:</span> <span class="s2">&quot;Metric conversions&quot;</span><span class="p">,</span>
 <span class="p">}]</span>
+
+
+<span class="c1"># for loop checks answers with the value in the dictionary</span>
 
 <span class="k">for</span> <span class="nb">dict</span> <span class="ow">in</span> <span class="n">My_Quiz</span><span class="p">:</span>
     <span class="k">for</span> <span class="n">questions</span><span class="p">,</span> <span class="n">answers</span> <span class="ow">in</span> <span class="nb">dict</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
