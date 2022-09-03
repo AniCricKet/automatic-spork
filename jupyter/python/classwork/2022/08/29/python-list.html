@@ -376,14 +376,14 @@ ecneicS retupmoC PA
 <span class="n">questions_number</span> <span class="o">=</span> <span class="mi">5</span>
 <span class="n">correct_answer</span> <span class="o">=</span> <span class="mi">0</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello, you will be asked &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">questions_number</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; short questions&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello, you will be asked &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">questions_number</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; short questions about common conversions.&quot;</span><span class="p">)</span>
 
 <span class="n">My_Quiz</span> <span class="o">=</span> <span class="p">[{</span>
-    <span class="s2">&quot;What is the answer to this math problem: What does 45x7=&quot;</span><span class="p">:</span> <span class="s2">&quot;315&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;What is the most popular religion in the world?&quot;</span><span class="p">:</span> <span class="s2">&quot;Christianity&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;What is the capital of the U.S?&quot;</span><span class="p">:</span> <span class="s2">&quot;Washington D.C.&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;How many kg is in 5g?&quot;</span><span class="p">:</span> <span class="s2">&quot;0.005 kg&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;How many mm are in 1 km?&quot;</span><span class="p">:</span> <span class="s2">&quot;1000000 mm&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;How many inches are in a foot?&quot;</span><span class="p">:</span> <span class="s2">&quot;12&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;How many kilometers is 1,000,000 millimeters?&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;How many feet are in a yard?&quot;</span><span class="p">:</span> <span class="s2">&quot;3&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;How many grams are in 25 kilograms?&quot;</span><span class="p">:</span> <span class="s2">&quot;25000&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;What is KHDUDCM used for?&quot;</span><span class="p">:</span> <span class="s2">&quot;Metric conversions&quot;</span><span class="p">,</span>
 <span class="p">}]</span>
 
 <span class="k">for</span> <span class="nb">dict</span> <span class="ow">in</span> <span class="n">My_Quiz</span><span class="p">:</span>
@@ -395,10 +395,35 @@ ecneicS retupmoC PA
         <span class="k">else</span><span class="p">:</span>
             <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Answer is incorrect&quot;</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You scored &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">correct_answer</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;/&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">questions_number</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You scored &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">correct_answer</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;/&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">questions_number</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;. Good work!&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Hello, you will be asked 5 short questions about common conversions.
+Question: How many inches are in a foot?
+Answer is correct
+Question: How many kilometers is 1,000,000 millimeters?
+Answer is correct
+Question: How many feet are in a yard?
+Answer is correct
+Question: How many grams are in 25 kilograms?
+Answer is correct
+Question: What is KHDUDCM used for?
+Answer is correct
+You scored 5/5. Good work!
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
