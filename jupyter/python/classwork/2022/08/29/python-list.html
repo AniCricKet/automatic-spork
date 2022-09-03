@@ -409,10 +409,10 @@ t
     <span class="k">for</span> <span class="n">questions</span><span class="p">,</span> <span class="n">answers</span> <span class="ow">in</span> <span class="nb">dict</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
         <span class="n">Python_Quiz</span><span class="p">(</span><span class="n">questions</span><span class="p">)</span>
         <span class="k">if</span> <span class="n">word</span> <span class="o">==</span> <span class="n">answers</span><span class="p">:</span>
-            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Answer is correct&quot;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="nb">input</span><span class="p">()</span> <span class="o">+</span> <span class="s2">&quot; is correct&quot;</span><span class="p">)</span>
             <span class="n">correct_answer</span> <span class="o">+=</span> <span class="mi">1</span>
         <span class="k">else</span><span class="p">:</span>
-            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Answer is incorrect&quot;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="nb">input</span><span class="p">()</span> <span class="o">+</span><span class="s2">&quot; is incorrect&quot;</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You scored &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">correct_answer</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;/&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">questions_number</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;. Good work!&quot;</span><span class="p">)</span>
 </pre></div>
@@ -429,15 +429,15 @@ t
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Hello, you will be asked 5 short questions about common conversions.
 Question: How many inches are in a foot?
-Answer is correct
+12 is correct
 Question: How many kilometers is 1,000,000 millimeters?
-Answer is correct
+1 is correct
 Question: How many feet are in a yard?
-Answer is correct
+3 is correct
 Question: How many grams are in 25 kilograms?
-Answer is correct
+25000 is correct
 Question: What is KHDUDCM used for?
-Answer is correct
+Metric conversions is correct
 You scored 5/5. Good work!
 </pre>
 </div>
