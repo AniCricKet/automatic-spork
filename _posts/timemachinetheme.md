@@ -1,0 +1,1 @@
+![]({{ site.baseurl }}/images/ThemeChange.png "Image of Theme Change")
