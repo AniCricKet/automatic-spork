@@ -142,7 +142,7 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;Hello World&quot;</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">echo</span> <span class="s2">&quot;Hello World&quot;</span>
 </pre></div>
 
     </div>
@@ -179,29 +179,29 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;Using conditional statement to create a project directory and project&quot;</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">echo</span> <span class="s2">&quot;Using conditional statement to create a project directory and project&quot;</span>
 
-<span class="nb">export</span> <span class="nv">project_dir</span><span class="o">=</span><span class="nv">$HOME</span>/bashScriptTest
-<span class="nb">export</span> <span class="nv">project</span><span class="o">=</span><span class="nv">$project_dir</span>/automatic-spork
-<span class="nb">export</span> <span class="nv">project_repo</span><span class="o">=</span><span class="s2">&quot;https://github.com/AniCricKet/automatic-spork.git&quot;</span>
+<span class="n">export</span> <span class="n">project_dir</span><span class="o">=</span><span class="err">$</span><span class="n">HOME</span><span class="o">/</span><span class="n">bashScriptTest</span>
+<span class="n">export</span> <span class="n">project</span><span class="o">=</span><span class="err">$</span><span class="n">project_dir</span><span class="o">/</span><span class="n">automatic</span><span class="o">-</span><span class="n">spork</span>
+<span class="n">export</span> <span class="n">project_repo</span><span class="o">=</span><span class="s2">&quot;https://github.com/AniCricKet/automatic-spork.git&quot;</span>
 
-<span class="nb">cd</span> ~
+<span class="n">cd</span> <span class="o">~</span>
 
-<span class="k">if</span> <span class="o">[</span> ! -d <span class="nv">$project_dir</span> <span class="o">]</span>
-<span class="k">then</span> 
-    <span class="nb">echo</span> <span class="s2">&quot;Directory </span><span class="nv">$project_dir</span><span class="s2"> does not exists... makinng directory </span><span class="nv">$project_dir</span><span class="s2">&quot;</span>
-    mkdir -p <span class="nv">$project_dir</span>
-<span class="k">fi</span>
-<span class="nb">echo</span> <span class="s2">&quot;Directory </span><span class="nv">$project_dir</span><span class="s2"> exists.&quot;</span> 
+<span class="k">if</span> <span class="p">[</span> <span class="err">!</span> <span class="o">-</span><span class="n">d</span> <span class="err">$</span><span class="n">project_dir</span> <span class="p">]</span>
+<span class="n">then</span> 
+    <span class="n">echo</span> <span class="s2">&quot;Directory $project_dir does not exists... makinng directory $project_dir&quot;</span>
+    <span class="n">mkdir</span> <span class="o">-</span><span class="n">p</span> <span class="err">$</span><span class="n">project_dir</span>
+<span class="n">fi</span>
+<span class="n">echo</span> <span class="s2">&quot;Directory $project_dir exists.&quot;</span> 
 
-<span class="k">if</span> <span class="o">[</span> ! -d <span class="nv">$project</span> <span class="o">]</span>
-<span class="k">then</span>
-    <span class="nb">echo</span> <span class="s2">&quot;Directory </span><span class="nv">$project</span><span class="s2"> does not exists... cloning </span><span class="nv">$project_repo</span><span class="s2">&quot;</span>
-    <span class="nb">cd</span> <span class="nv">$project_dir</span>
-    git clone <span class="nv">$project_repo</span>
-    <span class="nb">cd</span> ~
-<span class="k">fi</span>
-<span class="nb">echo</span> <span class="s2">&quot;Directory </span><span class="nv">$project</span><span class="s2"> exists.&quot;</span>
+<span class="k">if</span> <span class="p">[</span> <span class="err">!</span> <span class="o">-</span><span class="n">d</span> <span class="err">$</span><span class="n">project</span> <span class="p">]</span>
+<span class="n">then</span>
+    <span class="n">echo</span> <span class="s2">&quot;Directory $project does not exists... cloning $project_repo&quot;</span>
+    <span class="n">cd</span> <span class="err">$</span><span class="n">project_dir</span>
+    <span class="n">git</span> <span class="n">clone</span> <span class="err">$</span><span class="n">project_repo</span>
+    <span class="n">cd</span> <span class="o">~</span>
+<span class="n">fi</span>
+<span class="n">echo</span> <span class="s2">&quot;Directory $project exists.&quot;</span>
 </pre></div>
 
     </div>
@@ -240,21 +240,21 @@ Directory /Users/aniket/bashScriptTest/automatic-spork exists.
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;Navigate to project, then navigate to area wwhere files were cloned&quot;</span>
-<span class="nb">cd</span> <span class="nv">$project</span>
-<span class="nb">pwd</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">echo</span> <span class="s2">&quot;Navigate to project, then navigate to area wwhere files were cloned&quot;</span>
+<span class="n">cd</span> <span class="err">$</span><span class="n">project</span>
+<span class="n">pwd</span>
 
-<span class="nb">echo</span> <span class="s2">&quot;&quot;</span>
-<span class="nb">echo</span> <span class="s2">&quot;list top level or root of files with project pulled from github&quot;</span>
-ls
+<span class="n">echo</span> <span class="s2">&quot;&quot;</span>
+<span class="n">echo</span> <span class="s2">&quot;list top level or root of files with project pulled from github&quot;</span>
+<span class="n">ls</span>
 
-<span class="nb">echo</span> <span class="s2">&quot;&quot;</span>
-<span class="nb">echo</span> <span class="s2">&quot;list again with hidden files pulled from github&quot;</span>
-ls -a
+<span class="n">echo</span> <span class="s2">&quot;&quot;</span>
+<span class="n">echo</span> <span class="s2">&quot;list again with hidden files pulled from github&quot;</span>
+<span class="n">ls</span> <span class="o">-</span><span class="n">a</span>
 
-<span class="nb">echo</span> <span class="s2">&quot;&quot;</span>
-<span class="nb">echo</span> <span class="s2">&quot;list all files in long format&quot;</span>
-ls -al
+<span class="n">echo</span> <span class="s2">&quot;&quot;</span>
+<span class="n">echo</span> <span class="s2">&quot;list all files in long format&quot;</span>
+<span class="n">ls</span> <span class="o">-</span><span class="n">al</span>
 </pre></div>
 
     </div>
@@ -271,11 +271,11 @@ ls -al
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;Look for posts&quot;</span>
-<span class="nb">export</span> <span class="nv">posts</span><span class="o">=</span><span class="nv">$project</span>/_posts
-<span class="nb">cd</span> <span class="nv">$posts</span>
-<span class="nb">pwd</span>
-ls -l
+<div class=" highlight hl-python"><pre><span></span><span class="n">echo</span> <span class="s2">&quot;Look for posts&quot;</span>
+<span class="n">export</span> <span class="n">posts</span><span class="o">=</span><span class="err">$</span><span class="n">project</span><span class="o">/</span><span class="n">_posts</span>
+<span class="n">cd</span> <span class="err">$</span><span class="n">posts</span>
+<span class="n">pwd</span>
+<span class="n">ls</span> <span class="o">-</span><span class="n">l</span>
 </pre></div>
 
     </div>
@@ -311,11 +311,11 @@ total 24
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;Look for notebooks&quot;</span>
-<span class="nb">export</span> <span class="nv">notebooks</span><span class="o">=</span><span class="nv">$project</span>/_notebooks
-<span class="nb">cd</span> <span class="nv">$notebooks</span>
-<span class="nb">pwd</span>
-ls -l
+<div class=" highlight hl-python"><pre><span></span><span class="n">echo</span> <span class="s2">&quot;Look for notebooks&quot;</span>
+<span class="n">export</span> <span class="n">notebooks</span><span class="o">=</span><span class="err">$</span><span class="n">project</span><span class="o">/</span><span class="n">_notebooks</span>
+<span class="n">cd</span> <span class="err">$</span><span class="n">notebooks</span>
+<span class="n">pwd</span>
+<span class="n">ls</span> <span class="o">-</span><span class="n">l</span>
 </pre></div>
 
     </div>
@@ -354,10 +354,10 @@ drwxr-xr-x  3 aniket  staff       96 Aug 26 15:21 my_icons
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;Look for images in notebooks, print working directory, list files&quot;</span>
-<span class="nb">cd</span> <span class="nv">$notebooks</span>/images
-<span class="nb">pwd</span>
-ls -l
+<div class=" highlight hl-python"><pre><span></span><span class="n">echo</span> <span class="s2">&quot;Look for images in notebooks, print working directory, list files&quot;</span>
+<span class="n">cd</span> <span class="err">$</span><span class="n">notebooks</span><span class="o">/</span><span class="n">images</span>
+<span class="n">pwd</span>
+<span class="n">ls</span> <span class="o">-</span><span class="n">l</span>
 </pre></div>
 
     </div>
@@ -403,31 +403,31 @@ drwxr-xr-x  3 aniket  staff       96 Aug 26 15:21 my_icons
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;Navigate to project, then navigate to area wwhere files were cloned&quot;</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">echo</span> <span class="s2">&quot;Navigate to project, then navigate to area wwhere files were cloned&quot;</span>
 
-<span class="nb">cd</span> <span class="nv">$project</span>
+<span class="n">cd</span> <span class="err">$</span><span class="n">project</span>
 
-<span class="nb">echo</span> <span class="s2">&quot;show the contents of README.md&quot;</span>
-<span class="nb">echo</span> <span class="s2">&quot;&quot;</span>
+<span class="n">echo</span> <span class="s2">&quot;show the contents of README.md&quot;</span>
+<span class="n">echo</span> <span class="s2">&quot;&quot;</span>
 
-<span class="nb">echo</span> <span class="s2">&quot;Check if README.md exists&quot;</span>
-<span class="k">if</span> <span class="o">[</span> ! -d <span class="nv">$project</span> <span class="o">]</span>
-<span class="k">then</span>
-    <span class="nb">echo</span> <span class="s2">&quot;Project dir does not exist&quot;</span>
+<span class="n">echo</span> <span class="s2">&quot;Check if README.md exists&quot;</span>
+<span class="k">if</span> <span class="p">[</span> <span class="err">!</span> <span class="o">-</span><span class="n">d</span> <span class="err">$</span><span class="n">project</span> <span class="p">]</span>
+<span class="n">then</span>
+    <span class="n">echo</span> <span class="s2">&quot;Project dir does not exist&quot;</span>
 <span class="k">else</span>
-    <span class="nb">echo</span> <span class="s2">&quot;Project dir exists&quot;</span>
-<span class="k">fi</span>
-<span class="nb">cd</span> <span class="nv">$project</span>
+    <span class="n">echo</span> <span class="s2">&quot;Project dir exists&quot;</span>
+<span class="n">fi</span>
+<span class="n">cd</span> <span class="err">$</span><span class="n">project</span>
 
-<span class="k">if</span> <span class="o">[</span> -f <span class="s2">&quot;README.md&quot;</span> <span class="o">]</span>
-<span class="k">then</span>
-    <span class="nb">echo</span> <span class="s2">&quot;README.md exists&quot;</span>
-    cat README.md
-    <span class="nb">echo</span> <span class="s2">&quot;&quot;</span>
-    <span class="nb">echo</span> <span class="s2">&quot;end of README.md&quot;</span>
+<span class="k">if</span> <span class="p">[</span> <span class="o">-</span><span class="n">f</span> <span class="s2">&quot;README.md&quot;</span> <span class="p">]</span>
+<span class="n">then</span>
+    <span class="n">echo</span> <span class="s2">&quot;README.md exists&quot;</span>
+    <span class="n">cat</span> <span class="n">README</span><span class="o">.</span><span class="n">md</span>
+    <span class="n">echo</span> <span class="s2">&quot;&quot;</span>
+    <span class="n">echo</span> <span class="s2">&quot;end of README.md&quot;</span>
 <span class="k">else</span>
-    <span class="nb">echo</span> <span class="s2">&quot;README DOES NOT EXIST&quot;</span>
-<span class="k">fi</span>
+    <span class="n">echo</span> <span class="s2">&quot;README DOES NOT EXIST&quot;</span>
+<span class="n">fi</span>
 </pre></div>
 
     </div>
@@ -501,10 +501,10 @@ end of README.md
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;Show the shell environment variables, key on left of equal, value on right&quot;</span>
-<span class="nb">echo</span> <span class="s2">&quot;&quot;</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">echo</span> <span class="s2">&quot;Show the shell environment variables, key on left of equal, value on right&quot;</span>
+<span class="n">echo</span> <span class="s2">&quot;&quot;</span>
 
-env
+<span class="n">env</span>
 </pre></div>
 
     </div>
@@ -581,16 +581,16 @@ _=/usr/bin/env
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span><span class="nb">cd</span> <span class="nv">$project</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">cd</span> <span class="err">$</span><span class="n">project</span>
 
-<span class="nb">echo</span> <span class="s2">&quot;&quot;</span>
-<span class="nb">echo</span> <span class="s2">&quot;show the secrets of .git&quot;</span>
-<span class="nb">cd</span> .git
-ls -l
+<span class="n">echo</span> <span class="s2">&quot;&quot;</span>
+<span class="n">echo</span> <span class="s2">&quot;show the secrets of .git&quot;</span>
+<span class="n">cd</span> <span class="o">.</span><span class="n">git</span>
+<span class="n">ls</span> <span class="o">-</span><span class="n">l</span>
 
-<span class="nb">echo</span> <span class="s2">&quot;&quot;</span>
-<span class="nb">echo</span> <span class="s2">&quot;look at config file&quot;</span>
-cat config
+<span class="n">echo</span> <span class="s2">&quot;&quot;</span>
+<span class="n">echo</span> <span class="s2">&quot;look at config file&quot;</span>
+<span class="n">cat</span> <span class="n">config</span>
 </pre></div>
 
     </div>
@@ -655,37 +655,37 @@ look at config file
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span><span class="nb">cd</span> /tmp
+<div class=" highlight hl-python"><pre><span></span><span class="n">cd</span> <span class="o">/</span><span class="n">tmp</span>
 
-<span class="nv">file</span><span class="o">=</span><span class="s2">&quot;sample.md&quot;</span>
-<span class="k">if</span> <span class="o">[</span> -f <span class="s2">&quot;</span><span class="nv">$file</span><span class="s2">&quot;</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
-    rm <span class="nv">$file</span>
-<span class="k">fi</span>
+<span class="n">file</span><span class="o">=</span><span class="s2">&quot;sample.md&quot;</span>
+<span class="k">if</span> <span class="p">[</span> <span class="o">-</span><span class="n">f</span> <span class="s2">&quot;$file&quot;</span> <span class="p">];</span> <span class="n">then</span>
+    <span class="n">rm</span> <span class="err">$</span><span class="n">file</span>
+<span class="n">fi</span>
 
-tee -a <span class="nv">$file</span> &gt;/dev/null <span class="s">&lt;&lt;EOF</span>
-<span class="s"># Show Generated Markdown</span>
-<span class="s">This introductory paragraph and this line and the title above are generated using tee with the standard input (&lt;&lt;) redirection operator.</span>
-<span class="s">- This bulleted element is still part of the tee body.</span>
-<span class="s">EOF</span>
+<span class="n">tee</span> <span class="o">-</span><span class="n">a</span> <span class="err">$</span><span class="n">file</span> <span class="o">&gt;/</span><span class="n">dev</span><span class="o">/</span><span class="n">null</span> <span class="o">&lt;&lt;</span><span class="n">EOF</span>
+<span class="c1"># Show Generated Markdown</span>
+<span class="n">This</span> <span class="n">introductory</span> <span class="n">paragraph</span> <span class="ow">and</span> <span class="n">this</span> <span class="n">line</span> <span class="ow">and</span> <span class="n">the</span> <span class="n">title</span> <span class="n">above</span> <span class="n">are</span> <span class="n">generated</span> <span class="n">using</span> <span class="n">tee</span> <span class="k">with</span> <span class="n">the</span> <span class="n">standard</span> <span class="nb">input</span> <span class="p">(</span><span class="o">&lt;&lt;</span><span class="p">)</span> <span class="n">redirection</span> <span class="n">operator</span><span class="o">.</span>
+<span class="o">-</span> <span class="n">This</span> <span class="n">bulleted</span> <span class="n">element</span> <span class="ow">is</span> <span class="n">still</span> <span class="n">part</span> <span class="n">of</span> <span class="n">the</span> <span class="n">tee</span> <span class="n">body</span><span class="o">.</span>
+<span class="n">EOF</span>
 
-<span class="nb">echo</span> <span class="s2">&quot;- This bulleted element and lines below are generated using echo with standard output (&gt;&gt;) redirection operator.&quot;</span> &gt;&gt; <span class="nv">$file</span>
-<span class="nb">echo</span> <span class="s2">&quot;- The list definition, as is, is using space to seperate lines.  Thus the use of commas and hyphens in output.&quot;</span> &gt;&gt; <span class="nv">$file</span>
-<span class="nv">actions</span><span class="o">=(</span><span class="s2">&quot;ls,list-directory&quot;</span> <span class="s2">&quot;cd,change-directory&quot;</span> <span class="s2">&quot;pwd,present-working-directory&quot;</span> <span class="s2">&quot;if-then-fi,test-condition&quot;</span> <span class="s2">&quot;env,bash-environment-variables&quot;</span> <span class="s2">&quot;cat,view-file-contents&quot;</span> <span class="s2">&quot;tee,write-to-output&quot;</span> <span class="s2">&quot;echo,display-content-of-string&quot;</span> <span class="s2">&quot;echo_text_&gt;\$file,write-content-to-file&quot;</span> <span class="s2">&quot;echo_text_&gt;&gt;\$file,append-content-to-file&quot;</span><span class="o">)</span>
-<span class="k">for</span> action in <span class="si">${</span><span class="nv">actions</span><span class="p">[@]</span><span class="si">}</span><span class="p">;</span> <span class="k">do</span>  <span class="c1"># for loop is very similar to other language, though [@], semi-colon, do are new</span>
-  <span class="nv">action</span><span class="o">=</span><span class="si">${</span><span class="nv">action</span><span class="p">//-/ </span><span class="si">}</span>  <span class="c1"># convert dash to space</span>
-  <span class="nv">action</span><span class="o">=</span><span class="si">${</span><span class="nv">action</span><span class="p">//,/: </span><span class="si">}</span> <span class="c1"># convert comma to colon</span>
-  <span class="nv">action</span><span class="o">=</span><span class="si">${</span><span class="nv">action</span><span class="p">//_text_/ </span><span class="se">\&quot;</span><span class="nv">sample</span><span class="p"> text</span><span class="se">\&quot;</span><span class="p"> </span><span class="si">}</span> <span class="c1"># convert _text_ to sample text, note escape character \ to avoid &quot;&quot; having meaning</span>
-  <span class="nb">echo</span> <span class="s2">&quot;    - </span><span class="si">${</span><span class="nv">action</span><span class="p">//-/ </span><span class="si">}</span><span class="s2">&quot;</span> &gt;&gt; <span class="nv">$file</span>  <span class="c1"># echo is redirected to file with &gt;&gt;</span>
-<span class="k">done</span>
+<span class="n">echo</span> <span class="s2">&quot;- This bulleted element and lines below are generated using echo with standard output (&gt;&gt;) redirection operator.&quot;</span> <span class="o">&gt;&gt;</span> <span class="err">$</span><span class="n">file</span>
+<span class="n">echo</span> <span class="s2">&quot;- The list definition, as is, is using space to seperate lines.  Thus the use of commas and hyphens in output.&quot;</span> <span class="o">&gt;&gt;</span> <span class="err">$</span><span class="n">file</span>
+<span class="n">actions</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;ls,list-directory&quot;</span> <span class="s2">&quot;cd,change-directory&quot;</span> <span class="s2">&quot;pwd,present-working-directory&quot;</span> <span class="s2">&quot;if-then-fi,test-condition&quot;</span> <span class="s2">&quot;env,bash-environment-variables&quot;</span> <span class="s2">&quot;cat,view-file-contents&quot;</span> <span class="s2">&quot;tee,write-to-output&quot;</span> <span class="s2">&quot;echo,display-content-of-string&quot;</span> <span class="s2">&quot;echo_text_&gt;\$file,write-content-to-file&quot;</span> <span class="s2">&quot;echo_text_&gt;&gt;\$file,append-content-to-file&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">action</span> <span class="ow">in</span> <span class="err">$</span><span class="p">{</span><span class="n">actions</span><span class="p">[</span><span class="o">@</span><span class="p">]};</span> <span class="n">do</span>  <span class="c1"># for loop is very similar to other language, though [@], semi-colon, do are new</span>
+  <span class="n">action</span><span class="o">=</span><span class="err">$</span><span class="p">{</span><span class="n">action</span><span class="o">//-/</span> <span class="p">}</span>  <span class="c1"># convert dash to space</span>
+  <span class="n">action</span><span class="o">=</span><span class="err">$</span><span class="p">{</span><span class="n">action</span><span class="o">//</span><span class="p">,</span><span class="o">/</span><span class="p">:</span> <span class="p">}</span> <span class="c1"># convert comma to colon</span>
+  <span class="n">action</span><span class="o">=</span><span class="err">$</span><span class="p">{</span><span class="n">action</span><span class="o">//</span><span class="n">_text_</span><span class="o">/</span> \<span class="s2">&quot;sample text</span><span class="se">\&quot;</span><span class="s2"> } # convert _text_ to sample text, note escape character \ to avoid &quot;&quot; having meaning</span>
+  <span class="n">echo</span> <span class="s2">&quot;    - ${action//-/ }&quot;</span> <span class="o">&gt;&gt;</span> <span class="err">$</span><span class="n">file</span>  <span class="c1"># echo is redirected to file with &gt;&gt;</span>
+<span class="n">done</span>
 
-<span class="nb">echo</span> <span class="s2">&quot;&quot;</span>
-<span class="nb">echo</span> <span class="s2">&quot;File listing and status&quot;</span>
-ls -l <span class="nv">$file</span> <span class="c1"># list file</span>
-wc <span class="nv">$file</span>   <span class="c1"># show words</span>
-<span class="nb">export</span> <span class="nv">TERM</span><span class="o">=</span>ansi
-mdless <span class="nv">$file</span>  <span class="c1"># this requires installation, but renders markown from terminal</span>
+<span class="n">echo</span> <span class="s2">&quot;&quot;</span>
+<span class="n">echo</span> <span class="s2">&quot;File listing and status&quot;</span>
+<span class="n">ls</span> <span class="o">-</span><span class="n">l</span> <span class="err">$</span><span class="n">file</span> <span class="c1"># list file</span>
+<span class="n">wc</span> <span class="err">$</span><span class="n">file</span>   <span class="c1"># show words</span>
+<span class="n">export</span> <span class="n">TERM</span><span class="o">=</span><span class="n">ansi</span>
+<span class="n">mdless</span> <span class="err">$</span><span class="n">file</span>  <span class="c1"># this requires installation, but renders markown from terminal</span>
 
-rm <span class="nv">$file</span>  <span class="c1"># clean up termporary file</span>
+<span class="n">rm</span> <span class="err">$</span><span class="n">file</span>  <span class="c1"># clean up termporary file</span>
 </pre></div>
 
     </div>
@@ -740,8 +740,8 @@ using tee with the standard input (&lt;&lt;) redirection operator.
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span>python --version
-python2 --version
+<div class=" highlight hl-python"><pre><span></span><span class="n">python</span> <span class="o">--</span><span class="n">version</span>
+<span class="n">python2</span> <span class="o">--</span><span class="n">version</span>
 </pre></div>
 
     </div>
@@ -773,7 +773,7 @@ Python 2.7.18
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span>conda list
+<div class=" highlight hl-python"><pre><span></span><span class="n">conda</span> <span class="nb">list</span>
 </pre></div>
 
     </div>
@@ -1227,18 +1227,18 @@ zstd                      1.4.9                h322a384_0
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span><span class="nb">echo</span> Conda Check
+<div class=" highlight hl-python"><pre><span></span><span class="n">echo</span> <span class="n">Conda</span> <span class="n">Check</span>
 <span class="c1"># test for a kernel installation</span>
-<span class="nv">test</span><span class="o">=</span><span class="s2">&quot;jupyter&quot;</span> <span class="c1"># keyword</span>
-<span class="nv">check</span><span class="o">=</span><span class="sb">`</span>conda list <span class="p">|</span> grep <span class="nv">$test</span><span class="sb">`</span> <span class="c1"># run command</span>
-<span class="nv">n</span><span class="o">=</span><span class="si">${#</span><span class="nv">check</span><span class="si">}</span> <span class="c1"># determine length</span>
+<span class="n">test</span><span class="o">=</span><span class="s2">&quot;jupyter&quot;</span> <span class="c1"># keyword</span>
+<span class="n">check</span><span class="o">=</span><span class="err">`</span><span class="n">conda</span> <span class="nb">list</span> <span class="o">|</span> <span class="n">grep</span> <span class="err">$</span><span class="n">test</span><span class="err">`</span> <span class="c1"># run command</span>
+<span class="n">n</span><span class="o">=</span><span class="err">$</span><span class="p">{</span><span class="c1">#check} # determine length</span>
 
-<span class="k">if</span> <span class="o">[[</span> <span class="si">${</span><span class="nv">n</span><span class="si">}</span> &gt; <span class="m">0</span> <span class="o">]]</span><span class="p">;</span>  <span class="c1"># testt length</span>
-<span class="k">then</span> <span class="c1"># greater than zero</span>
-    <span class="nb">echo</span> <span class="s2">&quot;</span><span class="nv">$check</span><span class="s2">&quot;</span>
+<span class="k">if</span> <span class="p">[[</span> <span class="err">$</span><span class="p">{</span><span class="n">n</span><span class="p">}</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="p">]];</span>  <span class="c1"># testt length</span>
+<span class="n">then</span> <span class="c1"># greater than zero</span>
+    <span class="n">echo</span> <span class="s2">&quot;$check&quot;</span>
 <span class="k">else</span> <span class="c1"># less than zero</span>
-    <span class="nb">echo</span> <span class="s2">&quot;</span><span class="nv">$test</span><span class="s2"> not found&quot;</span>
-<span class="k">fi</span>
+    <span class="n">echo</span> <span class="s2">&quot;$test not found&quot;</span>
+<span class="n">fi</span>
 </pre></div>
 
     </div>
@@ -1278,8 +1278,8 @@ jupyterlab_widgets        1.0.0              pyhd3eb1b0_1
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span>jupyter --version
-jupyter kernelspec list
+<div class=" highlight hl-python"><pre><span></span><span class="n">jupyter</span> <span class="o">--</span><span class="n">version</span>
+<span class="n">jupyter</span> <span class="n">kernelspec</span> <span class="nb">list</span>
 </pre></div>
 
     </div>
@@ -1329,16 +1329,16 @@ Available kernels:
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span><span class="nv">test</span><span class="o">=</span><span class="s2">&quot;python3&quot;</span> <span class="c1"># keyword</span>
-<span class="nv">check</span><span class="o">=</span><span class="sb">`</span>jupyter kernelspec list <span class="p">|</span> grep <span class="nv">$test</span><span class="sb">`</span> <span class="c1"># run command</span>
-<span class="nv">n</span><span class="o">=</span><span class="si">${#</span><span class="nv">check</span><span class="si">}</span> <span class="c1"># determine length</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">test</span><span class="o">=</span><span class="s2">&quot;python3&quot;</span> <span class="c1"># keyword</span>
+<span class="n">check</span><span class="o">=</span><span class="err">`</span><span class="n">jupyter</span> <span class="n">kernelspec</span> <span class="nb">list</span> <span class="o">|</span> <span class="n">grep</span> <span class="err">$</span><span class="n">test</span><span class="err">`</span> <span class="c1"># run command</span>
+<span class="n">n</span><span class="o">=</span><span class="err">$</span><span class="p">{</span><span class="c1">#check} # determine length</span>
 
-<span class="k">if</span> <span class="o">[[</span> <span class="si">${</span><span class="nv">n</span><span class="si">}</span> &gt; <span class="m">0</span> <span class="o">]]</span><span class="p">;</span>  <span class="c1"># testt length</span>
-<span class="k">then</span> <span class="c1"># greater than zero</span>
-    <span class="nb">echo</span> <span class="s2">&quot;</span><span class="nv">$check</span><span class="s2">&quot;</span>
+<span class="k">if</span> <span class="p">[[</span> <span class="err">$</span><span class="p">{</span><span class="n">n</span><span class="p">}</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="p">]];</span>  <span class="c1"># testt length</span>
+<span class="n">then</span> <span class="c1"># greater than zero</span>
+    <span class="n">echo</span> <span class="s2">&quot;$check&quot;</span>
 <span class="k">else</span> <span class="c1"># less than zero</span>
-    <span class="nb">echo</span> <span class="s2">&quot;</span><span class="nv">$test</span><span class="s2"> not found&quot;</span>
-<span class="k">fi</span>
+    <span class="n">echo</span> <span class="s2">&quot;$test not found&quot;</span>
+<span class="n">fi</span>
 </pre></div>
 
     </div>
