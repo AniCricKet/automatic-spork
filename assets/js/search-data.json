@@ -2,10 +2,10 @@
   
     
         "post0": {
-            "title": "Fortnite",
-            "content": "toc: true | layout: post | badges: true | comments: true | categories: [markdown, jupyter, classwork] | title: Fortnite Quiz | description: “Quiz building process” | . Lucas and Aniket Quiz Plan: . Quiz based on Fortnite: Battle Royale Layout - 3 simple multiple choice questions: 1 welcome screen, 3 question screens, 1 ending screen . Q1: What year did Fortnite: Battle Royale release? . A: 1776 B: 2015 C: 2017 D: 2018 . Q2: Which is the vehicle which drops off players? . A: Reboot Van B: Battle Bus C: Helicopter D: Shopping cart . Q3: What weapons do you start off with upon spawning? . A: Pick-axe B: Scar C: Pistol D: Shotguns . Final quiz .",
-            "url": "https://anicricket.github.io/automatic-spork/2022/09/09/fortnite.html",
-            "relUrl": "/2022/09/09/fortnite.html",
+            "title": "Fortnite Quiz on Code.org",
+            "content": "Lucas and Aniket Quiz Plan: . Quiz based on Fortnite: Battle Royale Layout - 3 simple multiple choice questions: 1 welcome screen, 3 question screens, 1 ending screen . Q1: What year did Fortnite: Battle Royale release? . A: 1776 B: 2015 C: 2017 D: 2018 . Q2: Which is the vehicle which drops off players? . A: Reboot Van B: Battle Bus C: Helicopter D: Shopping cart . Q3: What weapons do you start off with upon spawning? . A: Pick-axe B: Scar C: Pistol D: Shotguns . Final quiz .",
+            "url": "https://anicricket.github.io/automatic-spork/markdown/classwork/2022/09/09/fortnite.html",
+            "relUrl": "/markdown/classwork/2022/09/09/fortnite.html",
             "date": " • Sep 9, 2022"
         }
         
