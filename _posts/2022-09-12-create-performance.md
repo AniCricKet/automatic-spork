@@ -2,7 +2,7 @@
 toc: true
 layout: post
 description: Creative Performance Task assignment
-categories: [markdown]
+categories: [markdown, classwork]
 title: College Board End of Trimester Creative Performance Task
 ---
 
