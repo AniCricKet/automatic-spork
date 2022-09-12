@@ -16,3 +16,6 @@ title: Vocabulary
 - def() - defines a function
 - print() - prints the string or variable within the parentheses
 - import - imports a library and variables from within the library
+
+
+## Psychology and Good Life
