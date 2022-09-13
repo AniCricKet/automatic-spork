@@ -4,4 +4,4 @@ permalink: /MyJourney/
 title: Comp-Sci Journey
 --- 
 
-Text goes here
+I began my coding journey at the tender age of 69.
