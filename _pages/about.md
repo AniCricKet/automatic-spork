@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About Aniket
+title: About
 permalink: /about/
 ---
 
