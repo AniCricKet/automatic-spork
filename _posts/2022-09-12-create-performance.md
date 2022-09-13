@@ -4,6 +4,7 @@ layout: post
 description: Creative Performance Task assignment
 categories: [markdown, classwork]
 title: College Board End of Trimester Creative Performance Task
+authors: Aniket Chakradeo, Lucas Moore
 ---
 
 This is the beginning of planning for the Create Performance Task assignment. More will be added to this post as weeks go by until it is time to code.
