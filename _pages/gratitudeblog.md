@@ -6,7 +6,7 @@ Author: Aniket Chakradeo
 --- 
 
 
-# Gratitude List
+## Gratitude List
 
 1. I'm grateful for my parents and my family for helping me with everything and giving me everything I could possibly need to suceed. 
 2. I'm also grateful for my friends, especially my APCSP buds, who always keep me happy and entertained. 
