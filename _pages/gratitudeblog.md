@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /Gratitude/
-title: Psychology and The Good Life Notes
+title: Psychology Video
 Author: Aniket Chakradeo
 --- 
 
