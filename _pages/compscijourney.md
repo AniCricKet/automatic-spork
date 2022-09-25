@@ -1,9 +1,8 @@
 ---
 layout: page
 permalink: /MyJourney/
-title: Comp-Sci Journey
+title: My Journey
 --- 
-
 
 # My Computer Science Journey
 
