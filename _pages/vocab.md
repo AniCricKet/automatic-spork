@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /Vocabulary/
-title: Vocabulary
+title: Vocab
 --- 
 
 ## Common terminal commands:
