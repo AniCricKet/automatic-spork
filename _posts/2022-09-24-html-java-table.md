@@ -15,7 +15,7 @@ I'm making a table of the top 5 run scorers in cricket
 | 2 | Kumar Sangakkara | 380 | 14234 | 42.00 |
 | 3 | Ricky Ponting | 365 | 13704 | 42.00 |
 | 4 | Sanath Jayasuriya | 433 | 13430 | 32.40 |
-| 5 | Virat Kohli | 252* | 12344 | 57.70 |
+| 5 | Virat Kohli | 252* | 12344* | 57.70 |
 
 
 Here's pictures of the bats that they used, kept in a museum that I visited over the summer:
