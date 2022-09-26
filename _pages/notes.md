@@ -15,3 +15,5 @@ Week 2 - We started to work with lists and dictionaries in Python. I learned how
 Week 3 - This week was a shorter week, and so we learned how to use code.org. I created a 3 question mini quiz on code.org based on fortnite, and also learned some basic javascript syntax.
 
 Week 4 - This week I learned how to run 2 different types of local servers. One was a flask server and the other one was a docker server. I didn't have any problems with the flask server, however I ran into some problems involving my M1 Macbook during the docker server. Because of this I had to run my servers on my dad's computer and learned more about why the servers don't work on computers with M1 chips.
+
+Week 5 - This week I really customized both my group flask server, and my personal one. I also learned how to create a submenu with links for posts and notebook files. We decided scrum team roles and made a scrum process. Lastly, we also worked more towards planning our final project.
