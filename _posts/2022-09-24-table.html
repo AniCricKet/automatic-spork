@@ -6,6 +6,8 @@ categories: [javascript, html]
 title: Cricket stats table
 
 ---
+Here is a demonstration of using HTML fragments and Java to make a table
+I'm making a table of the top 5 run scorers in cricket
 
 <script>
     var statistics = [
@@ -13,11 +15,10 @@ title: Cricket stats table
         {id: 2, name: "Kumar Sangakkara", innings: 380, runs: 14234, average: 42.00},
         {id: 3, name: "Ricky Ponting", innings: 365, runs: 13704, average: 42.00},
         {id: 4, name: "Sanath Jayasuriya", innings: 433, runs: 13430, average: 32.40},
-        {id: 5, name: "Virat Kohli", innings: 252, runs: 12344, average: 57.70},
-];
-
+        {id: 5, name: "Virat Kohli", innings: 252, runs: 12344, average: 57.70}
+]
 </script>
-<table class="table table-striped">
+<table class="table table-hover table-dark table-striped">
 <tr>
     <th>Rank</th>
     <th>Name</th>
@@ -25,11 +26,29 @@ title: Cricket stats table
     <th>Runs</th>
     <th>Average</th>
 </tr>
-{% for player in {{statistics}} %}
-    <tr>
-        <td>{{player.id}}</td>
-    </tr>
-{% endfor %} 
+<script>
+    var output = "";
+    for (index in statistics) {
+        output += '<tr><td>';
+        output += statistics[index].id;
+        output += '</td>';
+        output += '<td>';
+        output += statistics[index].name;
+        output += '</td>';
+        output += '<td>';
+        output += statistics[index].innings;
+        output += '</td>';
+        output += '<td>';
+        output += statistics[index].runs;
+        output += '</td>';
+        output += '<td>';
+        output += statistics[index].average;
+        output += '</td>';
+        output += '</tr>';
+    }
+    document.write(output);
+</script>
 </table>
-<img src="{{ site.baseurl }}/images/top5bats.png" alt="Cricket Bats in a museum" />
-Hello World!
+
+Here's pictures of the bats that they used, kept in a museum that I visited over the summer:
+<img src="{{ site.baseurl }}/images/top5bats.png" alt="Bats used by the top 5 Runscorers" />
