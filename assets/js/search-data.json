@@ -249,17 +249,6 @@
   
 
   
-      ,"page7": {
-          "title": "Submenu",
-          "content": "This is my Javascript Jupyter Notebook | Here is my Table made using html fragments and java | .",
-          "url": "https://anicricket.github.io/automatic-spork/Java-Submenu/",
-          "relUrl": "/Java-Submenu/",
-          "date": ""
-      }
-      
-  
-
-  
   
 
   
@@ -272,7 +261,7 @@
   
 
   
-      ,"page13": {
+      ,"page12": {
           "title": "Vocab",
           "content": "Common terminal commands: . ls: list files in a directory | cd: change directory | pwd: print working directory | . Python important commands . def() - defines a function | print() - prints the string or variable within the parentheses | import - imports a library and variables from within the library | . Psychology and Good Life .",
           "url": "https://anicricket.github.io/automatic-spork/Vocabulary/",
@@ -294,7 +283,7 @@
   
 
   
-      ,"page18": {
+      ,"page17": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://anicricket.github.io/automatic-spork/robots.txt",
