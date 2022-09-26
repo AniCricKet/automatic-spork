@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /Java-Submenu/
-title: Java Submenu
+title: Submenu
 --- 
 
 * This is my [Javascript Jupyter Notebook](https://anicricket.github.io/automatic-spork/jupyter/classwork/java/2022/09/24/javascript.html)
