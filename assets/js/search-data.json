@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Table",
-            "content": "",
+            "content": "Hello World! .",
             "url": "https://anicricket.github.io/automatic-spork/2022/09/24/table.html",
             "relUrl": "/2022/09/24/table.html",
             "date": " • Sep 24, 2022"
@@ -239,7 +239,7 @@
 
   
       ,"page7": {
-          "title": "Java Submenu",
+          "title": "Submenu",
           "content": "This is my Javascript Jupyter Notebook | Here is my markdown post post using html fragments and java | .",
           "url": "https://anicricket.github.io/automatic-spork/Java-Submenu/",
           "relUrl": "/Java-Submenu/",
