@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Cricket stats table",
-            "content": "I will demonstrate usage of both HTML fragments and Java to make a table of the top 5 run scorers in ODI cricket. . Rank Name Innings Runs Average . Here’s pictures of the bats that they used, kept in a museum that I visited over the summer: .",
+            "content": "I will demonstrate usage of both HTML fragments and Javascript to make a table of the top 5 run scorers in ODI cricket. . Rank Name Innings Runs Average . Here’s pictures of the bats that they used, kept in a museum that I visited over the summer: .",
             "url": "https://anicricket.github.io/automatic-spork/javascript/html/2022/09/24/table.html",
             "relUrl": "/javascript/html/2022/09/24/table.html",
             "date": " • Sep 24, 2022"
