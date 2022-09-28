@@ -4,7 +4,26 @@ search_exclude: true
 image: images/logo.png
 ---
 
-This site was built by [Aniket](https://github.com/AniCricKet/automatic-spork), using [fastpages](https://github.com/fastai/fastpages), An easy to use blogging platform with extra features for Jupyter Notebooks.
+<script>
+    var i = 0;
+    var txt = "Welcome to Aniket's Fastpages!";
+  
+    var speed = 100;
+    function typeWriter(x) {
+  
+      if (i <= txt.length) {
+        document.getElementById("typewriter").innerHTML = '\xa0' + txt.substring(0, i)
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+  
+    }
+  
+    typeWriter();
+  
+  </script>
+
+Here is a [link to my github](https://github.com/AniCricKet/automatic-spork)
 
 
 I am a sophomore at Del Norte High School. One of my favorite hobbies is watching and playing soccer. Here are my three favorite players:  
