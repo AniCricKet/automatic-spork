@@ -1,7 +1,9 @@
 ---
-layout: page
-title: English
-permalink: /p4-english/
+toc: true
+layout: post
+description: "English class tools"
+categories: [markdown]
+title: EC for another class
 ---
 
 Here is my english class [syllabus](https://docs.google.com/document/d/1MjlDH9oq3huSrh7NVRFdGUPUUqmSt081z3nErb53qP4/edit)
