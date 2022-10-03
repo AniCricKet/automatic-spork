@@ -214,7 +214,9 @@
   
 
   
-      ,"page2": {
+
+  
+      ,"page3": {
           "title": "My Journey",
           "content": "My Computer Science Journey . I began my coding journey at around 9 years old. I began by doing block coding on scratch or code.org. Over the years I became quite good at using these websites. At around 11 years old I attended a workshop where I learned how to use MIT App Inventor. Using this I created numerous apps, such as music apps, useful tools, games etc. I also took a coding class in 6th grade where I went more in depth about scratch and created more scratch projects and games. Over quarantine I started working more with python and learned some basics. I also taught some family friends how to block code, which helped me refine my skills as well. Then as freshman year began, I joined the Robotics team (Team Optix 3749), where I learned Java basics and syntax. Coding has been one of my biggest hobbies over the last few years, which is why I decided to take this class. In this class, I’ve learned lots of new things, including how to set up my own personal blog. .",
           "url": "https://anicricket.github.io/automatic-spork/MyJourney/",
@@ -225,7 +227,7 @@
   
 
   
-      ,"page3": {
+      ,"page4": {
           "title": "Psychology Video",
           "content": "Gratitude List . I’m grateful for my parents and my family for helping me with everything and giving me everything I could possibly need to suceed. | I’m also grateful for my friends, especially my APCSP buds, who always keep me happy and entertained. | I’m thankful to my teachers for helping me learn what I know and always being understanding. Vocabulary . Here is a list of words that were important to the video: . | Mental Health - The condition of a person’s mental well being | Depression - A condition related to the elevation or lowering of a person’s mood | Anxiety - Intense, excessive, and persistent worry and fear about everyday situations | Stress - A state of mental or emotional strain or tension resulting from adverse or very demanding circumstances. | Psychology - A field of study that studies happy people | Behavior - The way in which one acts or conducts oneself, especially toward others. | Habits - A settled or regular tendency or practice, especially one that is hard to give up. | Positivity - The practice of being or tendency to be positive or optimistic in attitude. | Emotion - A natural instinctive state of mind deriving from one’s circumstances, mood, or relationships with others. | Priorities - The fact or condition of being regarded or treated as more important. | . Goals . I made some goals, not just things that I want, but also goals based on mental health and happiness: . Get all As this year but also mantain a good social life. | Get 4s or 5s on my AP Exams | Keep my mental health in good shape | Spread happiness in order to help others stay happy | Practice some stress relieving methods | .",
           "url": "https://anicricket.github.io/automatic-spork/Gratitude/",
@@ -238,7 +240,7 @@
   
 
   
-      ,"page5": {
+      ,"page6": {
           "title": "Notes",
           "content": "Notes/Important takeaways . Week 0 - I learned how to install all the software required for coding, and basics of VSCode and Github. I also learned how to link jupyter notebooks to my blog. . Week 1 - This week taught me how to personalize my blog. I decided to make mine soccer themed, and so I applied the lessons of how to insert images. I also learned how to use bash, and some basics of bash. . Week 2 - We started to work with lists and dictionaries in Python. I learned how to append stuff to a dictionary, and how to use for loops and recursive loops to search through them. I created a second python quiz, this time using a dictionary to store the questions. We also worked on using HTML to customize our blogs. I was able to temporarily change the remote theme of my blog, as well as create a table to store everything we have done so far. . Week 3 - This week was a shorter week, and so we learned how to use code.org. I created a 3 question mini quiz on code.org based on fortnite, and also learned some basic javascript syntax. . Week 4 - This week I learned how to run 2 different types of local servers. One was a flask server and the other one was a docker server. I didn’t have any problems with the flask server, however I ran into some problems involving my M1 Macbook during the docker server. Because of this I had to run my servers on my dad’s computer and learned more about why the servers don’t work on computers with M1 chips. . Week 5 - This week I really customized both my group flask server, and my personal one. I also learned how to create a submenu with links for posts and notebook files. We decided scrum team roles and made a scrum process. Lastly, we also worked more towards planning our final project. .",
           "url": "https://anicricket.github.io/automatic-spork/Notes/",
@@ -261,7 +263,7 @@
   
 
   
-      ,"page11": {
+      ,"page12": {
           "title": "Vocab",
           "content": "Common terminal commands: . ls: list files in a directory | cd: change directory | pwd: print working directory | . Python important commands . def() - defines a function | print() - prints the string or variable within the parentheses | import - imports a library and variables from within the library | .",
           "url": "https://anicricket.github.io/automatic-spork/Vocabulary/",
@@ -283,7 +285,7 @@
   
 
   
-      ,"page16": {
+      ,"page17": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://anicricket.github.io/automatic-spork/robots.txt",
