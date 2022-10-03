@@ -1,9 +1,10 @@
 ---
-layout: page
-permalink: /Gratitude/
+toc: true
+layout: post
+description: "Psychology and the Good Life Hacks"
+categories: [markdown]
 title: Psychology Video
-Author: Aniket Chakradeo
---- 
+---
 
 
 ## Gratitude List
