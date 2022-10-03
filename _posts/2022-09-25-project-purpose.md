@@ -3,7 +3,7 @@ toc: true
 layout: post
 description: Project Purpose College Board Assignment
 categories: [markdown]
-title: Project Purpose
+title: 1.2 Project Purpose
 ---
 
 # Video Notes

@@ -1,9 +1,9 @@
 ---
 toc: true
 layout: post
-description: Creative Performance Task assignment
+description: College Board End of Trimester Creative Performance Task
 categories: [markdown, classwork]
-title: College Board End of Trimester Creative Performance Task
+title: 1.1 Create Performance Task
 authors: Aniket Chakradeo, Lucas Moore
 ---
 
