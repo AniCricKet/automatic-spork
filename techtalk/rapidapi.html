@@ -130,7 +130,6 @@ window.onload = wrap_img;
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="toc" class="section-nav">
-<li class="toc-entry toc-h3"><a href="#Python,-RapidAPI-Terms">Python, RapidAPI Terms </a></li>
 <li class="toc-entry toc-h3"><a href="#Covid19-RapidAPI-Example">Covid19 RapidAPI Example </a></li>
 <li class="toc-entry toc-h2"><a href="#Hacks">Hacks </a></li>
 </ul><!--
@@ -142,19 +141,6 @@ window.onload = wrap_img;
 
 <div class="container" id="notebook-container">
         
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Python,-RapidAPI-Terms">
-<a class="anchor" href="#Python,-RapidAPI-Terms" aria-hidden="true"><span class="octicon octicon-link"></span></a>Python, RapidAPI Terms<a class="anchor-link" href="#Python,-RapidAPI-Terms"> </a>
-</h3>
-<blockquote>
-<p>APIs and tooling like Jupyter docs allows many opportunities in fields like Data Science.  As more and more developers use APIs, they build standards in how you setup a client, send requests and receive information...</p>
-</blockquote>
-
-</div>
-</div>
-</div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -303,7 +289,7 @@ tests_per_1m_population 2,990,303
 <span class="p">}</span>
 
 <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s2">"POST"</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="n">payload</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
-
+<span class="n">ratings_dict</span> <span class="o">=</span> <span class="p">{}</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
 
 <span class="n">rating</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"What would you rate the quote on a scale of 1-10?"</span><span class="p">))</span>
@@ -312,7 +298,11 @@ tests_per_1m_population 2,990,303
 		<span class="nb">print</span><span class="p">(</span><span class="s2">"Please type an integer between 1-10"</span><span class="p">)</span>
 		<span class="n">rating</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"What would you rate the quote on a scale of 1-10, this time?"</span><span class="p">))</span>
 	<span class="k">else</span><span class="p">:</span> 
+		<span class="n">ratings_dict</span><span class="p">[</span><span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="p">]</span> <span class="o">=</span> <span class="n">rating</span>
 		<span class="nb">print</span><span class="p">(</span><span class="s2">"Thank you for rating the quote! We will try to suggest quotes with a smiliar rating of"</span><span class="p">,</span> <span class="n">rating</span><span class="p">)</span>
+		<span class="nb">print</span><span class="p">(</span><span class="s2">"Your ratings so far:"</span><span class="p">)</span>
+		<span class="nb">print</span><span class="p">(</span><span class="n">ratings_dict</span><span class="p">)</span>
+
 <span class="k">else</span><span class="p">:</span>
 	<span class="nb">print</span><span class="p">(</span><span class="s2">"Please type an integer between 1-10"</span><span class="p">)</span>
 	<span class="n">rating</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"What would you rate the quote on a scale of 1-10, this time?"</span><span class="p">))</span>
@@ -328,9 +318,10 @@ tests_per_1m_population 2,990,303
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>"The only thing to do with good advice is to pass it on. It is never of any use to oneself."
--Oscar Wilde
-Thank you for rating the quote! We will try to suggest quotes with a smiliar rating of 9
+<pre>"Any of us can achieve virtue, if by virtue we merely mean the avoidance of the vices that do not attract us."
+-Robert Lynd
+Thank you for rating the quote! We will try to suggest quotes with a smiliar rating of 6
+{'"Any of us can achieve virtue, if by virtue we merely mean the avoidance of the vices that do not attract us."\n-Robert Lynd': 6}
 </pre>
 </div>
 </div>
