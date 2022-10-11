@@ -453,14 +453,21 @@ window.onload = wrap_img;
     <span class="nb">print</span><span class="p">(</span><span class="n">k</span> <span class="o">+</span> <span class="s2">&quot;  $&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">v</span><span class="p">))</span> 
 <span class="n">item</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Please select an item from the menu&quot;</span><span class="p">)</span>
 <span class="n">item</span> <span class="o">=</span> <span class="n">item</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
-<span class="k">while</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">menu</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
-    <span class="n">quantity</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;How many do you want?&quot;</span><span class="p">))</span>
+<span class="n">done</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="k">while</span> <span class="p">(</span><span class="n">done</span> <span class="o">==</span> <span class="kc">False</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">menu</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+        <span class="n">quantity</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;How many do you want?&quot;</span><span class="p">))</span>
 
-    <span class="n">current_order</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">item</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; X &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">quantity</span><span class="p">))</span>
-    <span class="n">total</span> <span class="o">+=</span> <span class="p">(</span><span class="n">menu</span><span class="p">[</span><span class="n">item</span><span class="p">]</span> <span class="o">*</span> <span class="n">quantity</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">quantity</span><span class="p">))</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">item</span> <span class="o">+</span> <span class="s2">&quot;(s)&quot;</span> <span class="o">+</span> <span class="s2">&quot; added&quot;</span><span class="p">)</span>
-    
-
+        <span class="n">current_order</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">item</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; X &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">quantity</span><span class="p">))</span>
+        <span class="n">total</span> <span class="o">+=</span> <span class="p">(</span><span class="n">menu</span><span class="p">[</span><span class="n">item</span><span class="p">]</span> <span class="o">*</span> <span class="n">quantity</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">quantity</span><span class="p">))</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">item</span> <span class="o">+</span> <span class="s2">&quot;(s)&quot;</span> <span class="o">+</span> <span class="s2">&quot; added&quot;</span><span class="p">)</span>
+        
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">item</span> <span class="o">==</span> <span class="s2">&quot;done&quot;</span><span class="p">):</span>
+            <span class="n">done</span> <span class="o">=</span> <span class="kc">True</span>
+            <span class="k">break</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Please check the menu and enter a correct item, or &#39;done&#39; if you are finished with your order.&quot;</span><span class="p">)</span>
     <span class="n">item</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;What else do you want today? Type &#39;done&#39; to get your final total.&quot;</span><span class="p">)</span>
     <span class="n">item</span> <span class="o">=</span> <span class="n">item</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
     
@@ -468,14 +475,6 @@ window.onload = wrap_img;
 <span class="nb">print</span><span class="p">(</span><span class="n">current_order</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Price:&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;$&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">total</span><span class="p">,</span><span class="mi">2</span><span class="p">)))</span>
-
-
-<span class="c1"># single item code </span>
-
-<span class="c1"># if item == &quot;burger&quot; or item == &quot;fries&quot; or item == &quot;drink&quot;:</span>
-<span class="c1">#     print(&quot;Great choice,&quot;, name, &quot;! The grand total for your&quot;, item, &quot;will be &quot;,menu[item])</span>
-<span class="c1"># else:</span>
-<span class="c1">#     print(&quot;Please check the menu and try again!&quot;)</span>
 </pre></div>
 
     </div>
@@ -493,13 +492,15 @@ Here is our menu:
 burger  $3.99
 fries  $1.99
 drink  $0.99
-33 burger(s) added
-2 fries(s) added
+3 burger(s) added
+6 fries(s) added
+Please check the menu and enter a correct item, or &#39;done&#39; if you are finished with your order.
 0 drink(s) added
+2 burger(s) added
 Your order:
-[&#39;burger X 33.0&#39;, &#39;fries X 2.0&#39;, &#39;drink X 0.0&#39;]
+[&#39;burger X 3.0&#39;, &#39;fries X 6.0&#39;, &#39;drink X 0.0&#39;, &#39;burger X 2.0&#39;]
 Price:
-$135.65
+$31.89
 </pre>
 </div>
 </div>
