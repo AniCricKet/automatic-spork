@@ -3,7 +3,7 @@ toc: true
 layout: post
 description: Internet College Board Assignment
 categories: [markdown]
-title: Internet Notes
+title: 4.1 Internet Notes
 ---
 
 # Computer Networks and Systems
