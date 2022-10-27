@@ -5,9 +5,6 @@ description: Week 2 Final Progress Week 2
 categories: [markdown]
 title: Live Review Progress
 ---
-
-# [Our Final Project](lyntax.ml)
-
 ## Our goals for the start of the week
 
 In Week 1, we managed to create an api that would be able to display the defination of a word unknown to the user. Along with this, framework for the letters and the hangman were created. This week, some of our goals were to...
