@@ -5,7 +5,7 @@ description: A Binary Math illustrative application using HTML, Liquid, and Java
 permalink: /binary
 image: /images/binary.png
 categories: [3.B, 3.C, C4.4]
-tags: [html, liquid, javascript]
+tags: [html, javascript]
 week: 13
 type: pbl
 ---
