@@ -1,9 +1,9 @@
 ---
 title: Binary Math
-layout: default
+layout: post
 description: A Binary Math illustrative application using HTML, Liquid, and JavaScript.
 permalink: /binary
-tags: [html, liquid, javascript]
+tags: [html, javascript]
 week: 13
 type: pbl
 ---
