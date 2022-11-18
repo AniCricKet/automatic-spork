@@ -1,9 +1,10 @@
 ---
-toc: true
-layout: post
-description: A post on binary
-categories: [markdown, Week 13]
 title: Binary Math
+layout: default
+description: A Binary Math illustrative application using HTML, Liquid, and JavaScript.
+permalink: /binary
+tags: [html, liquid, javascript]
+week: 13
 ---
 
 <!-- Hack 1: add a character display to text when 8 bits, determine if printable or not printable -->
