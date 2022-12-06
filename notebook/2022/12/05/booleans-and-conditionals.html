@@ -845,7 +845,7 @@ John is experienced
 <span class="n">score</span> <span class="o">=</span> <span class="mi">0</span>
 
 <span class="k">while</span> <span class="n">i</span> <span class="o">!=</span> <span class="n">totalQs</span><span class="p">:</span>
-    <span class="n">qAnswered</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="n">status</span> <span class="o">=</span> <span class="kc">False</span>
 
     <span class="n">currentquestion</span> <span class="o">=</span> <span class="n">quiz</span><span class="p">[</span><span class="s2">"q"</span><span class="p">][</span><span class="n">i</span><span class="p">]</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">currentquestion</span> <span class="o">+</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
@@ -861,7 +861,7 @@ John is experienced
     
     <span class="nb">print</span><span class="p">(</span><span class="s2">""</span><span class="p">)</span>
     
-    <span class="k">while</span> <span class="n">qAnswered</span> <span class="o">==</span> <span class="kc">False</span><span class="p">:</span>
+    <span class="k">while</span> <span class="n">status</span> <span class="o">==</span> <span class="kc">False</span><span class="p">:</span>
         <span class="k">if</span>  <span class="n">ans</span> <span class="o">==</span> <span class="s2">"a"</span> <span class="ow">or</span> <span class="s2">"b"</span> <span class="ow">or</span> <span class="s2">"c"</span> <span class="ow">or</span> <span class="s2">"d"</span><span class="p">:</span>
             <span class="k">if</span> <span class="n">ans</span> <span class="o">==</span> <span class="n">quiz</span><span class="p">[</span><span class="s2">"answerkey"</span><span class="p">][</span><span class="n">i</span><span class="p">]:</span>
                 <span class="n">score</span> <span class="o">+=</span> <span class="mi">1</span>
@@ -869,7 +869,7 @@ John is experienced
             <span class="k">else</span><span class="p">:</span>
                 <span class="nb">print</span><span class="p">(</span><span class="s2">"Sadly"</span><span class="p">,</span> <span class="n">ans</span><span class="o">.</span><span class="n">lower</span><span class="p">(),</span> <span class="s2">"is incorrect :("</span><span class="p">)</span>
 
-            <span class="n">qAnswered</span> <span class="o">=</span> <span class="kc">True</span>
+            <span class="n">status</span> <span class="o">=</span> <span class="kc">True</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="nb">print</span><span class="p">(</span><span class="s2">"Enter select a valid option"</span><span class="p">)</span>
             
