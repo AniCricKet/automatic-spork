@@ -10,15 +10,15 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Welcome to the World of Booleans and Conditionals!" />
 <meta property="og:description" content="Welcome to the World of Booleans and Conditionals!" />
-<link rel="canonical" href="https://anicricket.github.io/automatic-spork/notebook/2022/12/01/booleans-and-conditionals.html" />
-<meta property="og:url" content="https://anicricket.github.io/automatic-spork/notebook/2022/12/01/booleans-and-conditionals.html" />
+<link rel="canonical" href="https://anicricket.github.io/automatic-spork/notebook/2022/12/05/booleans-and-conditionals.html" />
+<meta property="og:url" content="https://anicricket.github.io/automatic-spork/notebook/2022/12/05/booleans-and-conditionals.html" />
 <meta property="og:site_name" content="aniket" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2022-12-01T00:00:00-06:00" />
+<meta property="article:published_time" content="2022-12-05T00:00:00-06:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Unit 3 Sections 5-7" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-12-01T00:00:00-06:00","datePublished":"2022-12-01T00:00:00-06:00","description":"Welcome to the World of Booleans and Conditionals!","headline":"Unit 3 Sections 5-7","mainEntityOfPage":{"@type":"WebPage","@id":"https://anicricket.github.io/automatic-spork/notebook/2022/12/01/booleans-and-conditionals.html"},"url":"https://anicricket.github.io/automatic-spork/notebook/2022/12/01/booleans-and-conditionals.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-12-05T00:00:00-06:00","datePublished":"2022-12-05T00:00:00-06:00","description":"Welcome to the World of Booleans and Conditionals!","headline":"Unit 3 Sections 5-7","mainEntityOfPage":{"@type":"WebPage","@id":"https://anicricket.github.io/automatic-spork/notebook/2022/12/05/booleans-and-conditionals.html"},"url":"https://anicricket.github.io/automatic-spork/notebook/2022/12/05/booleans-and-conditionals.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/automatic-spork/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://anicricket.github.io/automatic-spork/feed.xml" title="aniket" /><link rel="shortcut icon" type="image/x-icon" href="/automatic-spork/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -73,13 +73,13 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Unit 3 Sections 5-7</h1><p class="page-description">Welcome to the World of Booleans and Conditionals!</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-12-01T00:00:00-06:00" itemprop="datePublished">
-        Dec 1, 2022
+    <h1 class="post-title p-name" itemprop="name headline">Unit 3 Sections 5-7</h1><p class="page-description">Welcome to the World of Booleans and Conditionals!</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-12-05T00:00:00-06:00" itemprop="datePublished">
+        Dec 5, 2022
       </time>
        • <span class="read-time" title="Estimated read time">
     
     
-      8 min read
+      7 min read
     
 </span></p>
 
@@ -832,62 +832,50 @@ John is experienced
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">getpass</span><span class="o">,</span> <span class="nn">sys</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">quiz</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"q"</span> <span class="p">:</span> <span class="p">[</span><span class="s2">"Who won the last edition of the Fifa World Cup?"</span><span class="p">,</span> <span class="s2">"How many world cup goals does Messi have in his career so far?"</span><span class="p">,</span> <span class="s2">"Which team has won the most amount of World Cup trophies in the history of the competition?"</span><span class="p">],</span>
+    <span class="s2">"a"</span> <span class="p">:</span> <span class="p">[[</span><span class="s2">"Germany"</span><span class="p">,</span><span class="s2">"France"</span><span class="p">,</span><span class="s2">"India"</span><span class="p">,</span><span class="s2">"Brazil"</span><span class="p">],</span> <span class="p">[</span><span class="s2">"7"</span><span class="p">,</span><span class="s2">"16"</span><span class="p">,</span><span class="s2">"10"</span><span class="p">,</span><span class="s2">"9"</span><span class="p">],</span> <span class="p">[</span><span class="s2">"Argentina"</span><span class="p">,</span><span class="s2">"Spain"</span><span class="p">,</span><span class="s2">"England"</span><span class="p">,</span><span class="s2">"Brazil"</span><span class="p">]],</span> 
+    <span class="s2">"answerkey"</span> <span class="p">:</span> <span class="p">[</span><span class="s2">"b"</span><span class="p">,</span> <span class="s2">"d"</span><span class="p">,</span> <span class="s2">"d"</span><span class="p">],</span>
+    <span class="s2">"options"</span> <span class="p">:</span> <span class="p">[</span><span class="s2">"a"</span><span class="p">,</span> <span class="s2">"b"</span><span class="p">,</span> <span class="s2">"c"</span><span class="p">,</span> <span class="s2">"d"</span><span class="p">]</span>
+<span class="p">}</span>
 
-<span class="k">def</span> <span class="nf">question_and_answer</span><span class="p">(</span><span class="n">prompt</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"Question: "</span> <span class="o">+</span> <span class="n">prompt</span><span class="p">)</span>
-    <span class="n">msg</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"Answer: "</span> <span class="o">+</span> <span class="n">msg</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Welcome to my World Cup Quiz!"</span><span class="p">)</span>
+<span class="n">totalQs</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">score</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">while</span> <span class="n">i</span> <span class="o">!=</span> <span class="n">totalQs</span><span class="p">:</span>
+    <span class="n">qAnswered</span> <span class="o">=</span> <span class="kc">False</span>
+
+    <span class="n">currentquestion</span> <span class="o">=</span> <span class="n">quiz</span><span class="p">[</span><span class="s2">"q"</span><span class="p">][</span><span class="n">i</span><span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">currentquestion</span> <span class="o">+</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
     
-<span class="k">def</span> <span class="nf">question_with_response</span><span class="p">(</span><span class="n">prompt</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"Question: "</span> <span class="o">+</span> <span class="n">prompt</span><span class="p">)</span>
-    <span class="n">msg</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
-    <span class="k">return</span> <span class="n">msg</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="mi">0</span>
 
-<span class="n">questions</span> <span class="o">=</span> <span class="mi">5</span>
-<span class="n">correct</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"What is your name?"</span><span class="p">)</span>
+    <span class="k">while</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="mi">4</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">quiz</span><span class="p">[</span><span class="s2">"options"</span><span class="p">][</span><span class="n">n</span><span class="p">])</span> <span class="o">+</span> <span class="s2">": "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">quiz</span><span class="p">[</span><span class="s2">"a"</span><span class="p">][</span><span class="n">i</span><span class="p">][</span><span class="n">n</span><span class="p">]))</span>
+        <span class="n">n</span> <span class="o">+=</span> <span class="mi">1</span>
+    
+    <span class="n">ans</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="n">currentquestion</span><span class="p">)</span>
+    <span class="n">ans</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+    
+    <span class="nb">print</span><span class="p">(</span><span class="s2">""</span><span class="p">)</span>
+    
+    <span class="k">while</span> <span class="n">qAnswered</span> <span class="o">==</span> <span class="kc">False</span><span class="p">:</span>
+        <span class="k">if</span>  <span class="n">ans</span> <span class="o">==</span> <span class="s2">"a"</span> <span class="ow">or</span> <span class="s2">"b"</span> <span class="ow">or</span> <span class="s2">"c"</span> <span class="ow">or</span> <span class="s2">"d"</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">ans</span> <span class="o">==</span> <span class="n">quiz</span><span class="p">[</span><span class="s2">"answerkey"</span><span class="p">][</span><span class="n">i</span><span class="p">]:</span>
+                <span class="n">score</span> <span class="o">+=</span> <span class="mi">1</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s2">"Congratulations"</span><span class="p">,</span> <span class="n">ans</span><span class="o">.</span><span class="n">lower</span><span class="p">(),</span> <span class="s2">"is correct!"</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s2">"Sadly"</span><span class="p">,</span> <span class="n">ans</span><span class="o">.</span><span class="n">lower</span><span class="p">(),</span> <span class="s2">"is incorrect :("</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s1">'Welcome to my soccer quiz, '</span> <span class="o">+</span> <span class="n">name</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"You will be asked "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">questions</span><span class="p">)</span> <span class="o">+</span> <span class="s2">" questions."</span><span class="p">)</span>
-<span class="n">question_and_answer</span><span class="p">(</span><span class="s2">"Are you ready to take a test?"</span><span class="p">)</span>
-
-<span class="n">rsp</span> <span class="o">=</span> <span class="n">question_with_response</span><span class="p">(</span><span class="s2">"How many balon d'ors has Lionel Messi won?"</span><span class="p">)</span>
-<span class="k">if</span> <span class="n">rsp</span> <span class="o">==</span> <span class="s2">"7"</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">" is correct!"</span><span class="p">)</span>
-    <span class="n">correct</span> <span class="o">+=</span> <span class="mi">1</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">" is incorrect!"</span><span class="p">)</span>
-
-<span class="n">rsp</span> <span class="o">=</span> <span class="n">question_with_response</span><span class="p">(</span><span class="s2">"Which team has won the most amount of champions league titles?"</span><span class="p">)</span>
-<span class="k">if</span> <span class="n">rsp</span> <span class="o">==</span> <span class="s2">"Real Madrid"</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">" is correct!"</span><span class="p">)</span>
-    <span class="n">correct</span> <span class="o">+=</span> <span class="mi">1</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">" is incorrect!"</span><span class="p">)</span>
-
-<span class="n">rsp</span> <span class="o">=</span> <span class="n">question_with_response</span><span class="p">(</span><span class="s2">"Who won the 2018 edition of the FIFA World Cup?"</span><span class="p">)</span>
-<span class="k">if</span> <span class="n">rsp</span> <span class="o">==</span> <span class="s2">"France"</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">" is correct!"</span><span class="p">)</span>
-    <span class="n">correct</span> <span class="o">+=</span> <span class="mi">1</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">" is incorrect!"</span><span class="p">)</span>
-
-<span class="n">rsp</span> <span class="o">=</span> <span class="n">question_with_response</span><span class="p">(</span><span class="s2">"What is it called when a player without the ball on the offensive team is behind the last defender or fullback?"</span><span class="p">)</span>
-<span class="k">if</span> <span class="n">rsp</span> <span class="o">==</span> <span class="s2">"Offside"</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">" is correct!"</span><span class="p">)</span>
-    <span class="n">correct</span> <span class="o">+=</span> <span class="mi">1</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">" is incorrect!"</span><span class="p">)</span>
-
-<span class="n">rsp</span> <span class="o">=</span> <span class="n">question_with_response</span><span class="p">(</span><span class="s2">"What is given if the attacking team is fouled inside the penalty box?"</span><span class="p">)</span>
-<span class="k">if</span> <span class="n">rsp</span> <span class="o">==</span> <span class="s2">"Penalty kick"</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">" is correct!"</span><span class="p">)</span>
-    <span class="n">correct</span> <span class="o">+=</span> <span class="mi">1</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">" is incorrect!"</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Congratulations,"</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s2">" you scored "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">correct</span><span class="p">)</span> <span class="o">+</span><span class="s2">"/"</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">questions</span><span class="p">))</span>
+            <span class="n">qAnswered</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"Enter select a valid option"</span><span class="p">)</span>
+            
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Your score is: "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">score</span><span class="p">)</span> <span class="o">+</span> <span class="s2">" points </span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+    
+    <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
 </pre></div>
 
     </div>
@@ -900,21 +888,37 @@ John is experienced
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Welcome to my soccer quiz, Aniket
-You will be asked 5 questions.
-Question: Are you ready to take a test?
-Answer: yes
-Question: How many balon d'ors has Lionel Messi won?
-7 is correct!
-Question: Which team has won the most amount of champions league titles?
-Real Madrid is correct!
-Question: Who won the 2018 edition of the FIFA World Cup?
-France is correct!
-Question: What is it called when a player without the ball on the offensive team is behind the last defender or fullback?
-Offside is correct!
-Question: What is given if the attacking team is fouled inside the penalty box?
-Penalty kick is correct!
-Congratulations,Aniket you scored 5/5
+<pre>Welcome to my World Cup Quiz!
+Who won the last edition of the Fifa World Cup?
+
+a: Germany
+b: France
+c: India
+d: Brazil
+
+Congratulations b is correct!
+Your score is: 1 points 
+
+How many world cup goals does Messi have in his career so far?
+
+a: 7
+b: 16
+c: 10
+d: 9
+
+Congratulations d is correct!
+Your score is: 2 points 
+
+Which team has won the most amount of World Cup trophies in the history of the competition?
+
+a: Argentina
+b: Spain
+c: England
+d: Brazil
+
+Congratulations d is correct!
+Your score is: 3 points 
+
 </pre>
 </div>
 </div>
@@ -929,7 +933,7 @@ Congratulations,Aniket you scored 5/5
 
 
 
-  </div><a class="u-url" href="/automatic-spork/notebook/2022/12/01/booleans-and-conditionals.html" hidden></a>
+  </div><a class="u-url" href="/automatic-spork/notebook/2022/12/05/booleans-and-conditionals.html" hidden></a>
 </article>
 
       </div>
