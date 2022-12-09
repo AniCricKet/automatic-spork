@@ -19,6 +19,11 @@ title: Vocab
 
 # Unit 2… Binary/Data Terms
 ---------------
+
+| Word | Definition | Code Example/Image |
+|-|-|-|
+| Bits | The smallest unit of data that a computer can process | ![]({{ site.baseurl }}/images/bitexample.png) |
+
 - Bits - 
 - Bytes - 
 - Hexadecimal -
