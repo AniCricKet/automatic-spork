@@ -23,7 +23,7 @@ title: Vocab
 | Word | Definition | Code Example/Image |
 |-|-|-|
 | Bits | The smallest unit of data that a computer can process | ![]({{ site.baseurl }}/images/bitexample.png) |
-| Bytes | A group of binary digits / bits | ![]({{ site.baseurl }}/images/byteexample.png |
+| Bytes | A group of binary digits / bits | ![]({{ site.baseurl }}/images/byteexample.png) |
 
 - Bits - 
 - Bytes - 
