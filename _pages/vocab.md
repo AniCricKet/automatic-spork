@@ -40,38 +40,38 @@ title: Vocab
 
 # Unit 3… Algorithm/Programming Terms
 -------------------
-- Variables
-- Data Types
-- Assignment Operators
-- Managing Complexity with Variables
-- Lists
-- 2D Lists
-- Dictionaries
-- Class
-- Algorithms
-- Sequence
-- Selection
-- Iteration
-- Expressions
-- Comparison Operators
-- Booleans Expressions and Selection
-- Booleans Expressions and Iteration
-- Truth Tabless
-- Characters
-- Strings 
-- Length 
-- Concatenation
-- Upper
-- Lower
-- Traversing Strings
-- Python If
-- Elif
-- Else Conditionals
-- Nested Selection Statements
-- For Loops
-- While loops 
-- Combining loops with conditionals to Break/continue
-- Procedural Abstraction
-- Python Def procedures
-- Parameters
-- Return Values
+- Variables - 
+- Data Types - 
+- Assignment Operators - 
+- Managing Complexity with Variables - 
+- Lists - 
+- 2D Lists - 
+- Dictionaries -
+- Class - 
+- Algorithms - 
+- Sequence - 
+- Selection - 
+- Iteration - 
+- Expressions - 
+- Comparison Operators - 
+- Booleans Expressions and Selection - 
+- Booleans Expressions and Iteration - 
+- Truth Tables - 
+- Characters -
+- Strings -
+- Length -
+- Concatenation -
+- Upper -
+- Lower -
+- Traversing Strings -
+- Python If -
+- Elif - 
+- Else Conditionals - 
+- Nested Selection Statements -
+- For Loops -
+- While loops -  
+- Combining loops with conditionals to Break/continue -
+- Procedural Abstraction - 
+- Python Def procedures -
+- Parameters -
+- Return Values -
