@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      10 min read
+      11 min read
     
 </span></p>
 
@@ -641,6 +641,72 @@ Caped
 </ul>
 <p>AND</p>
 <p>Find an example of a simulation in a software/game you use, screenshot, and explain how it is a simulation</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>I decided to make a simulation of acceleration on Earth. The initial velocity and position of the object are set to 0, and the time step, or dt, and number of iterations are set to 0.1 and 1000. The acceleration is set to 9.81 m/s^2, and the simulation is performed by updating the position and velocity of the object at each iteration according to the equations of motion that I've learned in physics 1 so far.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">velocity</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">position</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="c1"># Set time step and number of iterations</span>
+<span class="n">dt</span> <span class="o">=</span> <span class="mf">0.1</span>
+<span class="n">n_iterations</span> <span class="o">=</span> <span class="mi">1000</span>
+
+<span class="c1"># Set gravitational acceleration</span>
+<span class="n">g</span> <span class="o">=</span> <span class="mf">9.81</span>
+
+<span class="c1"># Perform simulation</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n_iterations</span><span class="p">):</span>
+  <span class="c1"># Calculate new position</span>
+  <span class="n">position</span> <span class="o">+=</span> <span class="n">velocity</span> <span class="o">*</span> <span class="n">dt</span>
+  <span class="c1"># Calculate new velocity</span>
+  <span class="n">velocity</span> <span class="o">+=</span> <span class="n">g</span> <span class="o">*</span> <span class="n">dt</span>
+  
+<span class="nb">print</span><span class="p">(</span><span class="n">velocity</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">position</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>980.999999999995
+49000.94999999976
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>As we spoke in class, an example of a simulation is Blender. I am currently in 3D animation 1 with Mr Askegreen, and over the past few weeks I've made this donut. A key thing to notice is how blender is able to simulate how the light bounces off the donut's icing.</p>
 
 </div>
 </div>
