@@ -4,4 +4,4 @@ https://AniCricKet.github.io/automatic-spork/
 
 <a href=#><img src="contributions.svg"></a>
 
-![](https://komarev.com/ghpvc/?username=AniCricKet&color=ff69b4&label=Loving+Fans&style=plastic)
+![](https://komarev.com/ghpvc/?username=AniCricKet&color=ff69b4&label=My+Loving+Fans&style=plastic)
