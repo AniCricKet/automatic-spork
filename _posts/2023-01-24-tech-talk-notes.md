@@ -6,7 +6,7 @@ permalink: /bigidea512
 tags: [markdown, notes]
 ---
 
-### Questions to Answer
+# Questions to Answer
 
 1. Think of three beneficial effects of your projects based on 5.1 Unit
    - People will easily be able to find recipes based on their allergies
