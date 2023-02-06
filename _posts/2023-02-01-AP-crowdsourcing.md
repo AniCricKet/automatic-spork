@@ -33,6 +33,9 @@ They have lots of different categories and a vast variety of databases.
 
 ### Hacks 
 > Think of a use case for crowdsourcing in you project ...
-* CompSci has 150 ish principles students.  Describe a crowdsource idea and how you might initiate it in our environment?  
+* CompSci has 150ish principles students.  Describe a crowdsource idea and how you might initiate it in our environment?  
+Our slack channel is basically an example of crowd sourcing, as we have a large group of people who can help if we ever run into any difficulties.
 * What about Del Norte crowdsourcing?  Could your project be better with crowdsourcing?
+Yes, our project would definitely improve with crowd sourcing. Because we are going to have a feature where users can add reviews on recipes, the more reviews we have will definitely make our website seem more reliable.
 * What kind of data could you capture at N@tM to make evening interesting?  Perhaps use this data to impress Teachers during finals week.
+As said earlier, the more reviews we have, the more impressive and interesting our project will be. So on the day of N@TM we would be looking to get users to not only use our recipe suggester but to also leave reviews for each recipe in order to better our product.

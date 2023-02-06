@@ -42,6 +42,3 @@ Yes, this can be harmful as it creates an exclusionary experience for the indivi
 Yes, it should be corrected. Technology should be inclusive and accessible to all, regardless of race or ethnicity. This can be done by increasing diversity in the development and testing process, ensuring that the software is properly calibrated and tested, and by implementing measures to address and correct any biases in the technology.
     * What would you or should you do to produce a better outcome?
 I would test with all different types of people and make sure that it works with a diverse group of people.
-
-## Hacks
-> Write summary/thoughts/conclusions from each of the exercises above.  Focus on avoiding Bias in algorithms or code you write.
