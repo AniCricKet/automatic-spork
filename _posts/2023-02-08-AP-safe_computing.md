@@ -39,8 +39,25 @@ As we create a Web Site and post information we are adding to the Searchable PII
 
 ## Blog Post Reflection:
 1. Describe PII you have seen on project in CompSci Principles.   
-1. What are your feelings about PII and your personal exposure?
-1. Describe good and bad passwords?  What is another step that is used to assist in authentication.
-1. Try to describe Symmetric and Asymmetric encryption.  
-1. Provide an example of encryption we used in AWS deployment.
-1. Describe a phishing scheme you have learned about ***the hard way***.  Describe some other phishing techniques.
+
+Many of the project ask for names for a sign in. Additionally one of the projects asked for your grades which can be very personal to students. What are your feelings about PII and your personal exposure?
+
+2. What are your feelings about PII and your personal exposure?
+
+I feel that my data when given to websites should be protected. I would not like it if my photos were out without my permission unless its something that I have given permission to post, such as school affiliated clubs and organizations. Describe good and bad passwords? What is another step that is used to assist in authentication.
+
+3. Describe good and bad passwords?  What is another step that is used to assist in authentication?
+
+Good passwords are unique to the person and do not contain ‘easy to guess’ information like names and birth years. Another step used in authentication is two factor authentication, using your email or phone number which is good because it is less likely for someone to access your account that way. For example Slack uses two factor. I learned this the hard way because I used my school email to sign up and when it asked to email me I realized I couldn’t access an inbox thorugh my school email. (Still don’t know how to fix this) Try to describe Symmetric and Asymmetric encryption
+
+4. Try to describe Symmetric and Asymmetric encryption.
+
+Symmetric encryption uses the same key to both encrypt and decrypt data. Assmmetric uses two different keys to encrypt and decrypt. Provide an example of encryption we used in AWS deployment.
+
+5. Provide an example of encryption we used in AWS deployment.
+
+AES-256 is the technology we use to encrypt data in AWS
+
+6. Describe a phishing scheme you have learned about ***the hard way***.  Describe some other phishing techniques.
+
+So I'm a big cricket fan and recently the international board for cricket fell for a phishing scheme and lost thousands of dollars. Personally I have never fallen for any major phishing scheme but I have gotten lots of scam calls where people try to get information about me like my social security number or my credit card. 
