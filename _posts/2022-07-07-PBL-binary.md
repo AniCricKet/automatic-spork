@@ -1,6 +1,6 @@
 ---
 title: Binary Math
-layout: default
+layout: base
 description: A Binary Math illustrative application using HTML, Liquid, and JavaScript.
 permalink: /binary
 tags: [html, liquid, javascript]

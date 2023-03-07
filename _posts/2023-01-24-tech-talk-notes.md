@@ -1,6 +1,6 @@
 ---
 title: Big Idea 5.1 and 5.2 Hacks
-layout: default
+layout: base
 description: Beneficial and Harmful Effects of Technology
 permalink: /bigidea512
 tags: [markdown, notes]
