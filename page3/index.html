@@ -73,7 +73,29 @@ window.onload = wrap_img;
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <div class="home"><p>This site was built by <a href="https://github.com/AniCricKet/automatic-spork">Aniket</a>. I am a sophomore at Del Norte High School. One of my favorite hobbies is watching and playing soccer. Here are my three favorite players:</p>
+        <div class="home"><html>
+<script>
+  var i = 0;
+  var txt = "welcome to my blog 🤠";
+
+  var speed = 100;
+  function typeWriter(x) {
+
+    if (i <= txt.length) {
+      document.getElementById("typewriter").innerHTML = txt.substring(0, i)
+      i++;
+      setTimeout(typeWriter, speed);
+    }
+
+  }
+
+  typeWriter();
+
+</script>
+
+</html>
+
+<p>This site was built by <a href="https://github.com/AniCricKet/automatic-spork">Aniket</a>. I am a sophomore at Del Norte High School. One of my favorite hobbies is watching and playing soccer. Here are my three favorite players:</p>
 
 <p><img src="/automatic-spork/images/messisquare.png" alt="" title="Image of Lionel Messi" />
 <img src="/automatic-spork/images/neymarsquareGIF.gif" alt="" title="GIF of Neymar Jr" />

@@ -72,7 +72,29 @@ window.onload = wrap_img;
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <div class="home"><p>This site was built by <a href="https://github.com/AniCricKet/automatic-spork">Aniket</a>. I am a sophomore at Del Norte High School. One of my favorite hobbies is watching and playing soccer. Here are my three favorite players:</p>
+        <div class="home"><html>
+<script>
+  var i = 0;
+  var txt = "welcome to my blog 🤠";
+
+  var speed = 100;
+  function typeWriter(x) {
+
+    if (i <= txt.length) {
+      document.getElementById("typewriter").innerHTML = txt.substring(0, i)
+      i++;
+      setTimeout(typeWriter, speed);
+    }
+
+  }
+
+  typeWriter();
+
+</script>
+
+</html>
+
+<p>This site was built by <a href="https://github.com/AniCricKet/automatic-spork">Aniket</a>. I am a sophomore at Del Norte High School. One of my favorite hobbies is watching and playing soccer. Here are my three favorite players:</p>
 
 <p><img src="/automatic-spork/images/messisquare.png" alt="" title="Image of Lionel Messi" />
 <img src="/automatic-spork/images/neymarsquareGIF.gif" alt="" title="GIF of Neymar Jr" />
@@ -254,12 +276,12 @@ window.onload = wrap_img;
       </div>
   </div></li><li><div class="Box box-shadow-medium rounded-1 col-12"><div class="col-8 d-table-cell p-3">
         <h3>
-          <a class="post-link" href="/automatic-spork/notebook/2023/03/12/booleans-and-conditionals.html">
+          <a class="post-link" href="/automatic-spork/notebook/2023/03/13/booleans-and-conditionals.html">
             Unit 3 Sections 5-7
           </a>
         </h3>
         <p class="post-meta-description">Welcome to the World of Booleans and Conditionals!</p>
-          <p class="post-meta">Mar 12, 2023</p>
+          <p class="post-meta">Mar 13, 2023</p>
       </div>
   </div></li><li><div class="Box box-shadow-medium rounded-1 col-12"><div class="col-8 d-table-cell p-3">
         <h3>
@@ -268,7 +290,7 @@ window.onload = wrap_img;
           </a>
         </h3>
         <p class="post-meta-description">Algorithmic Efficiency and Undecidable Problems</p>
-          <p class="post-meta">Mar 12, 2023</p>
+          <p class="post-meta">Mar 13, 2023</p>
       </div>
   </div></li><li><div class="Box box-shadow-medium rounded-1 col-12"><div class="col-4 d-table-cell p-3 v-align-middle">
         <img class="image-preview " src="/automatic-spork/images/python.png" />
