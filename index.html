@@ -4,6 +4,28 @@ search_exclude: true
 image: images/logo.png
 ---
 
+<html>
+<script>
+  var i = 0;
+  var txt = "welcome to my blog 🤠";
+
+  var speed = 100;
+  function typeWriter(x) {
+
+    if (i <= txt.length) {
+      document.getElementById("typewriter").innerHTML = txt.substring(0, i)
+      i++;
+      setTimeout(typeWriter, speed);
+    }
+
+  }
+
+  typeWriter();
+
+</script>
+
+</html>
+
 This site was built by [Aniket](https://github.com/AniCricKet/automatic-spork). I am a sophomore at Del Norte High School. One of my favorite hobbies is watching and playing soccer. Here are my three favorite players:  
 
 ![]({{ site.baseurl }}/images/messisquare.png "Image of Lionel Messi")
