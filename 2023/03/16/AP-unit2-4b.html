@@ -184,7 +184,7 @@ window.onload = wrap_img;
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span>
 
-<span class="n">database</span> <span class="o">=</span> <span class="s1">'files/sqlite.db'</span> <span class="c1"># this is location of database</span>
+<span class="n">database</span> <span class="o">=</span> <span class="s1">'instance/sqlite.db'</span> <span class="c1"># this is location of database</span>
 
 <span class="k">def</span> <span class="nf">schema</span><span class="p">():</span>
     
@@ -208,6 +208,24 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(0, 'id', 'INTEGER', 1, None, 1)
+(1, '_name', 'VARCHAR(255)', 1, None, 0)
+(2, '_uid', 'VARCHAR(255)', 1, None, 0)
+(3, '_password', 'VARCHAR(255)', 1, None, 0)
+(4, '_dob', 'DATE', 0, None, 0)
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -270,6 +288,25 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(1, 'Thomas Edison', 'toby', 'sha256$L6tYfrAjpL1uD2wQ$e48d68ff90a4f0a2effd5f86abed797a5b247e9d8ede2ab9513df2b8971d04c1', '1847-02-11')
+(2, 'Nikola Tesla', 'niko', 'sha256$VF1JW3qTSJ6qKkMS$29785ff67e44702b45a53c2e5c66540becb548773d496200414d14548b0acf84', '2023-03-15')
+(3, 'Alexander Graham Bell', 'lex', 'sha256$AZos0zfj8JemZrI3$9939047fa78118513908835d3244e2959b212342bc5cb35d72b8a6e88bb0ff39', '2023-03-15')
+(4, 'Eli Whitney', 'whit', 'sha256$8qJZA6c04HDvA0aT$b607ac3dd2fe69899d241865a350807a420cfe58349f0b4784b6f0b2357afbb4', '2023-03-15')
+(5, 'Indiana Jones', 'indi', 'sha256$v245JOHOEPhJlMdY$d361af2ae59902dd6fd778928287a5db6e67d2c328830c559e776c9d3c762dbc', '1920-10-21')
+(6, 'Marion Ravenwood', 'raven', 'sha256$5VtGze1xqQJzsXk5$9bea1b4b207b7c5aeae98920e334ca402dcdfd4a6af8b46ec0165c7e819acc9d', '1921-10-21')
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -327,10 +364,24 @@ window.onload = wrap_img;
     <span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     
-<span class="c1">#create()</span>
+<span class="n">create</span><span class="p">()</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>A new user record nick has been created
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -396,10 +447,24 @@ window.onload = wrap_img;
     <span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     
-<span class="c1">#update()</span>
+<span class="n">update</span><span class="p">()</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The row with user id toby the password has been successfully updated
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -457,10 +522,24 @@ window.onload = wrap_img;
     <span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     
-<span class="c1">#delete()</span>
+<span class="n">delete</span><span class="p">()</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The row with uid lex was successfully deleted
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -516,6 +595,20 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>A new user record lancesson has been created
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
