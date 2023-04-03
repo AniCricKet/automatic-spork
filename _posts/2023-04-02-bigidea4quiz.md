@@ -3,8 +3,8 @@ toc: true
 layout: post
 description: This is a blog post about the multiple choice quiz on Collegeboard about Big Idea 4
 categories: [markdown]
-title: AP CSP Big Idea 4 
-permalink: /bigidea4quiz
+title: AP CSP Multiple Choice Quiz 4 
+permalink: /mcq4
 ---
 
 
