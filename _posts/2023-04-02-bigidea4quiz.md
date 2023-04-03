@@ -18,3 +18,12 @@ Q6: This question was about the contents of an Internet packet. The question ask
 Q43: This question was asking which of the options was not an example of procedural abstraction. I put that providing more opportunities for code reuse, but this is wrong because the use of procedures provides opportunities for code reuse. The correct answer is making the code run faster
 
 Q47: This question was about binary search on list of time stamps. The question asked about a time stamp which indicates the date and time that a measurement was taken. A data scientist has a list containing 10,000 time stamps, sorted in chronological order. Which of the following is closest to the maximum number of values that will need to be examined when performing a binary search for a value in the list? I thought the answer was 5,000 but this is wrong because a binary search on a list of length 10,000 will eliminate 5,000 elements on the first iteration, fewer than 5,000 iterations are needed to find the target value or to determine that it is not in the list.
+
+
+# Summary:
+
+Even though I made a few errors on the multiple-choice questions, the majority were simply careless mistakes. To avoid this during the AP test, it is important to take extra care while reading both the questions and all of the answer choices.
+
+
+
+
