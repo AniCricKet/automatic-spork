@@ -13,14 +13,12 @@
 <link rel="canonical" href="https://anicricket.github.io/automatic-spork/2023/03/29/DS-hashmaps.html" />
 <meta property="og:url" content="https://anicricket.github.io/automatic-spork/2023/03/29/DS-hashmaps.html" />
 <meta property="og:site_name" content="aniket" />
-<meta property="og:image" content="https://anicricket.github.io/automatic-spork/images/python.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2023-03-29T00:00:00-05:00" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://anicricket.github.io/automatic-spork/images/python.png" />
+<meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Data Structures- Hashmaps, Sets, Hash Tables, Hashing and Collisions" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-03-29T00:00:00-05:00","datePublished":"2023-03-29T00:00:00-05:00","description":"Observing hashmaps with python dictionaries","headline":"Data Structures- Hashmaps, Sets, Hash Tables, Hashing and Collisions","image":"https://anicricket.github.io/automatic-spork/images/python.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://anicricket.github.io/automatic-spork/2023/03/29/DS-hashmaps.html"},"url":"https://anicricket.github.io/automatic-spork/2023/03/29/DS-hashmaps.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-03-29T00:00:00-05:00","datePublished":"2023-03-29T00:00:00-05:00","description":"Observing hashmaps with python dictionaries","headline":"Data Structures- Hashmaps, Sets, Hash Tables, Hashing and Collisions","mainEntityOfPage":{"@type":"WebPage","@id":"https://anicricket.github.io/automatic-spork/2023/03/29/DS-hashmaps.html"},"url":"https://anicricket.github.io/automatic-spork/2023/03/29/DS-hashmaps.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/automatic-spork/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://anicricket.github.io/automatic-spork/feed.xml" title="aniket" /><link rel="shortcut icon" type="image/x-icon" href="/automatic-spork/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -81,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      8 min read
+      10 min read
     
 </span></p>
 
@@ -257,8 +255,7 @@ window.onload = wrap_img;
 <span class="p">}</span>
 
 <span class="c1"># What data structures do you see?</span>
-<span class="c1">#</span>
-<span class="c1">#</span>
+<span class="c1"># Dictionary with strings and integers</span>
 
 <span class="c1"># Printing the dictionary</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">lover_album</span><span class="p">)</span>
@@ -363,8 +360,7 @@ The Man
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">lover_album</span><span class="p">[</span><span class="s2">"producer"</span><span class="p">]</span> <span class="o">=</span> <span class="nb">set</span><span class="p">([</span><span class="s1">'Taylor Swift'</span><span class="p">,</span> <span class="s1">'Jack Antonoff'</span><span class="p">,</span> <span class="s1">'Joel Little'</span><span class="p">,</span> <span class="s1">'Taylor Swift'</span><span class="p">,</span> <span class="s1">'Louis Bell'</span><span class="p">,</span> <span class="s1">'Frank Dukes'</span><span class="p">])</span>
 
 <span class="c1"># What can you change to make sure there are no duplicate producers?</span>
-<span class="c1">#</span>
-<span class="c1">#</span>
+<span class="c1"># Make it a set</span>
 
 <span class="c1"># Printing the dictionary</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">lover_album</span><span class="p">)</span>
@@ -380,7 +376,7 @@ The Man
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>{'title': 'Lover', 'artist': 'Taylor Swift', 'year': 2019, 'genre': ['Pop', 'Synth-pop'], 'tracks': {1: 'I Forgot That You Existed', 2: 'Cruel Summer', 3: 'Lover', 4: 'The Man', 5: 'The Archer', 6: 'I Think He Knows', 7: 'Miss Americana &amp; The Heartbreak Prince', 8: 'Paper Rings', 9: 'Cornelia Street', 10: 'Death By A Thousand Cuts', 11: 'London Boy', 12: "Soon You'll Get Better (feat. Dixie Chicks)", 13: 'False God', 14: 'You Need To Calm Down', 15: 'Afterglow', 16: 'Me! (feat. Brendon Urie of Panic! At The Disco)', 17: "It's Nice To Have A Friend", 18: 'Daylight', 19: 'All Of The Girls You Loved Before'}, 'producer': {'Frank Dukes', 'Taylor Swift', 'Joel Little', 'Louis Bell', 'Jack Antonoff'}}
+<pre>{'title': 'Lover', 'artist': 'Taylor Swift', 'year': 2019, 'genre': ['Pop', 'Synth-pop'], 'tracks': {1: 'I Forgot That You Existed', 2: 'Cruel Summer', 3: 'Lover', 4: 'The Man', 5: 'The Archer', 6: 'I Think He Knows', 7: 'Miss Americana &amp; The Heartbreak Prince', 8: 'Paper Rings', 9: 'Cornelia Street', 10: 'Death By A Thousand Cuts', 11: 'London Boy', 12: "Soon You'll Get Better (feat. Dixie Chicks)", 13: 'False God', 14: 'You Need To Calm Down', 15: 'Afterglow', 16: 'Me! (feat. Brendon Urie of Panic! At The Disco)', 17: "It's Nice To Have A Friend", 18: 'Daylight'}, 'producer': {'Frank Dukes', 'Louis Bell', 'Taylor Swift', 'Jack Antonoff', 'Joel Little'}}
 </pre>
 </div>
 </div>
@@ -401,8 +397,7 @@ The Man
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">lover_album</span><span class="p">[</span><span class="s2">"tracks"</span><span class="p">]</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="mi">19</span><span class="p">:</span> <span class="s2">"All Of The Girls You Loved Before"</span><span class="p">})</span>
 
 <span class="c1"># How would add an additional genre to the dictionary, like electropop? </span>
-<span class="c1"># </span>
-<span class="c1"># </span>
+<span class="c1"># instead of doing ["tracks"].update(), do ["genre"].update()</span>
 
 <span class="c1"># Printing the dictionary</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">lover_album</span><span class="p">)</span>
@@ -418,7 +413,7 @@ The Man
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>{'title': 'Lover', 'artist': 'Taylor Swift', 'year': 2019, 'genre': ['Pop', 'Synth-pop'], 'tracks': {1: 'I Forgot That You Existed', 2: 'Cruel Summer', 3: 'Lover', 4: 'The Man', 5: 'The Archer', 6: 'I Think He Knows', 7: 'Miss Americana &amp; The Heartbreak Prince', 8: 'Paper Rings', 9: 'Cornelia Street', 10: 'Death By A Thousand Cuts', 11: 'London Boy', 12: "Soon You'll Get Better (feat. Dixie Chicks)", 13: 'False God', 14: 'You Need To Calm Down', 15: 'Afterglow', 16: 'Me! (feat. Brendon Urie of Panic! At The Disco)', 17: "It's Nice To Have A Friend", 18: 'Daylight', 19: 'All Of The Girls You Loved Before'}, 'producer': ['Taylor Swift', 'Jack Antonoff', 'Joel Little', 'Taylor Swift', 'Louis Bell', 'Frank Dukes']}
+<pre>{'title': 'Lover', 'artist': 'Taylor Swift', 'year': 2019, 'genre': ['Pop', 'Synth-pop'], 'tracks': {1: 'I Forgot That You Existed', 2: 'Cruel Summer', 3: 'Lover', 4: 'The Man', 5: 'The Archer', 6: 'I Think He Knows', 7: 'Miss Americana &amp; The Heartbreak Prince', 8: 'Paper Rings', 9: 'Cornelia Street', 10: 'Death By A Thousand Cuts', 11: 'London Boy', 12: "Soon You'll Get Better (feat. Dixie Chicks)", 13: 'False God', 14: 'You Need To Calm Down', 15: 'Afterglow', 16: 'Me! (feat. Brendon Urie of Panic! At The Disco)', 17: "It's Nice To Have A Friend", 18: 'Daylight', 19: 'All Of The Girls You Loved Before'}, 'producer': {'Frank Dukes', 'Louis Bell', 'Taylor Swift', 'Jack Antonoff', 'Joel Little'}}
 </pre>
 </div>
 </div>
@@ -436,12 +431,19 @@ The Man
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">k</span><span class="p">,</span><span class="n">v</span> <span class="ow">in</span> <span class="n">lover_album</span><span class="o">.</span><span class="n">items</span><span class="p">():</span> <span class="c1"># iterate using a for loop for key and value</span>
-    <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">k</span><span class="p">)</span> <span class="o">+</span> <span class="s2">": "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">v</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># for k,v in lover_album.items(): # iterate using a for loop for key and value</span>
+<span class="c1">#     print(str(k) + ": " + str(v))</span>
 
 <span class="c1"># Write your own code to print tracks in readable format</span>
-<span class="c1">#</span>
-<span class="c1">#</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Album Title:"</span><span class="p">,</span> <span class="n">lover_album</span><span class="p">[</span><span class="s2">"title"</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Artist:"</span><span class="p">,</span> <span class="n">lover_album</span><span class="p">[</span><span class="s2">"artist"</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Year:"</span><span class="p">,</span> <span class="n">lover_album</span><span class="p">[</span><span class="s2">"year"</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Genre:"</span><span class="p">,</span> <span class="s2">", "</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">lover_album</span><span class="p">[</span><span class="s2">"genre"</span><span class="p">]))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Tracklist:"</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">track_num</span><span class="p">,</span> <span class="n">track_title</span> <span class="ow">in</span> <span class="n">lover_album</span><span class="p">[</span><span class="s2">"tracks"</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">track_num</span><span class="p">,</span> <span class="s2">"-"</span><span class="p">,</span> <span class="n">track_title</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -454,12 +456,31 @@ The Man
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>title: Lover
-artist: Taylor Swift
-year: 2019
-genre: ['Pop', 'Synth-pop']
-tracks: {1: 'I Forgot That You Existed', 2: 'Cruel Summer', 3: 'Lover', 4: 'The Man', 5: 'The Archer', 6: 'I Think He Knows', 7: 'Miss Americana &amp; The Heartbreak Prince', 8: 'Paper Rings', 9: 'Cornelia Street', 10: 'Death By A Thousand Cuts', 11: 'London Boy', 12: "Soon You'll Get Better (feat. Dixie Chicks)", 13: 'False God', 14: 'You Need To Calm Down', 15: 'Afterglow', 16: 'Me! (feat. Brendon Urie of Panic! At The Disco)', 17: "It's Nice To Have A Friend", 18: 'Daylight', 19: 'All Of The Girls You Loved Before'}
-producer: ['Taylor Swift', 'Jack Antonoff', 'Joel Little', 'Taylor Swift', 'Louis Bell', 'Frank Dukes']
+<pre>Album Title: Lover
+Artist: Taylor Swift
+Year: 2019
+Genre: Pop, Synth-pop
+
+Tracklist:
+1 - I Forgot That You Existed
+2 - Cruel Summer
+3 - Lover
+4 - The Man
+5 - The Archer
+6 - I Think He Knows
+7 - Miss Americana &amp; The Heartbreak Prince
+8 - Paper Rings
+9 - Cornelia Street
+10 - Death By A Thousand Cuts
+11 - London Boy
+12 - Soon You'll Get Better (feat. Dixie Chicks)
+13 - False God
+14 - You Need To Calm Down
+15 - Afterglow
+16 - Me! (feat. Brendon Urie of Panic! At The Disco)
+17 - It's Nice To Have A Friend
+18 - Daylight
+19 - All Of The Girls You Loved Before
 </pre>
 </div>
 </div>
@@ -477,18 +498,24 @@ producer: ['Taylor Swift', 'Jack Antonoff', 'Joel Little', 'Taylor Swift', 'Loui
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">search</span><span class="p">():</span>
-    <span class="n">search</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"What would you like to know about the album?"</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">lover_album</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">search</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span> <span class="o">==</span> <span class="kc">None</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">"Invalid Search"</span><span class="p">)</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">lover_album</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">search</span><span class="o">.</span><span class="n">lower</span><span class="p">()))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># def search():</span>
+<span class="c1">#     search = input("What would you like to know about the album?")</span>
+<span class="c1">#     if lover_album.get(search.lower()) == None:</span>
+<span class="c1">#         print("Invalid Search")</span>
+<span class="c1">#     else:</span>
+<span class="c1">#         print(lover_album.get(search.lower()))</span>
 
-<span class="n">search</span><span class="p">()</span>
+<span class="c1"># search()</span>
 
 <span class="c1"># This is a very basic code segment, how can you improve upon this code?</span>
-<span class="c1">#</span>
-<span class="c1">#</span>
+
+<span class="kn">import</span> <span class="nn">random</span>
+
+<span class="n">random_track_num</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">lover_album</span><span class="p">[</span><span class="s2">"tracks"</span><span class="p">]</span><span class="o">.</span><span class="n">keys</span><span class="p">()))</span>
+<span class="n">random_track_title</span> <span class="o">=</span> <span class="n">lover_album</span><span class="p">[</span><span class="s2">"tracks"</span><span class="p">][</span><span class="n">random_track_num</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Randomly chosen track from the album:"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">random_track_num</span><span class="p">,</span> <span class="s2">"-"</span><span class="p">,</span> <span class="n">random_track_title</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -501,7 +528,104 @@ producer: ['Taylor Swift', 'Jack Antonoff', 'Joel Little', 'Taylor Swift', 'Loui
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Invalid Search
+<pre>Randomly chosen track from the album:
+7 - Miss Americana &amp; The Heartbreak Prince
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">aewss</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"title"</span><span class="p">:</span> <span class="s2">"An Evening With Silk Sonic"</span><span class="p">,</span>
+    <span class="s2">"artist"</span><span class="p">:</span> <span class="s2">"Silk Sonic"</span><span class="p">,</span>
+    <span class="s2">"year"</span><span class="p">:</span> <span class="mi">2022</span><span class="p">,</span>
+    <span class="s2">"genre"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"R&amp;B"</span><span class="p">,</span> <span class="s2">"Soul"</span><span class="p">],</span>
+    <span class="s2">"tracks"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="mi">1</span><span class="p">:</span> <span class="s2">"Silk Sonic Intro"</span><span class="p">,</span>
+        <span class="mi">2</span><span class="p">:</span> <span class="s2">"Leave the Door Open"</span><span class="p">,</span>
+        <span class="mi">3</span><span class="p">:</span> <span class="s2">"Fly As Me"</span><span class="p">,</span>
+        <span class="mi">4</span><span class="p">:</span> <span class="s2">"After Last Night (with Thundercat and Bootsy Collins)"</span><span class="p">,</span>
+        <span class="mi">5</span><span class="p">:</span> <span class="s2">"Smokin Out The Window"</span><span class="p">,</span>
+        <span class="mi">6</span><span class="p">:</span> <span class="s2">"Put On A Smile"</span><span class="p">,</span>
+        <span class="mi">7</span><span class="p">:</span> <span class="s2">"777"</span><span class="p">,</span>
+        <span class="mi">8</span><span class="p">:</span> <span class="s2">"Skate"</span><span class="p">,</span>
+        <span class="mi">9</span><span class="p">:</span> <span class="s2">"Blast Off"</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="p">}</span>
+
+<span class="c1"># Print the whole dictionary</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">aewss</span><span class="p">)</span>
+
+<span class="c1"># Print just the tracks</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">aewss</span><span class="p">[</span><span class="s1">'tracks'</span><span class="p">])</span>
+
+<span class="c1"># Print only the 3rd track (my personal favorite song)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">aewss</span><span class="p">[</span><span class="s1">'tracks'</span><span class="p">][</span><span class="mi">3</span><span class="p">])</span>
+
+<span class="c1"># Add the deluxe bonus track</span>
+<span class="n">aewss</span><span class="p">[</span><span class="s2">"tracks"</span><span class="p">]</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="mi">10</span><span class="p">:</span> <span class="s2">"Love's Train"</span><span class="p">})</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">" "</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Printing Complete Album:</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="c1"># for k,v in aewss.items(): # iterate using a for loop for key and value</span>
+<span class="c1">#     print(str(k) + ": " + str(v))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Album Title:"</span><span class="p">,</span> <span class="n">aewss</span><span class="p">[</span><span class="s2">"title"</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Artist:"</span><span class="p">,</span> <span class="n">aewss</span><span class="p">[</span><span class="s2">"artist"</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Year:"</span><span class="p">,</span> <span class="n">aewss</span><span class="p">[</span><span class="s2">"year"</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Genre:"</span><span class="p">,</span> <span class="s2">", "</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">aewss</span><span class="p">[</span><span class="s2">"genre"</span><span class="p">]))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Tracklist:"</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">track_num</span><span class="p">,</span> <span class="n">track_title</span> <span class="ow">in</span> <span class="n">aewss</span><span class="p">[</span><span class="s2">"tracks"</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">track_num</span><span class="p">,</span> <span class="s2">"-"</span><span class="p">,</span> <span class="n">track_title</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{'title': 'An Evening With Silk Sonic', 'artist': 'Silk Sonic', 'year': 2022, 'genre': ['R&amp;B', 'Soul'], 'tracks': {1: 'Silk Sonic Intro', 2: 'Leave the Door Open', 3: 'Fly As Me', 4: 'After Last Night (with Thundercat and Bootsy Collins)', 5: 'Smokin Out The Window', 6: 'Put On A Smile', 7: '777', 8: 'Skate', 9: 'Blast Off'}}
+{1: 'Silk Sonic Intro', 2: 'Leave the Door Open', 3: 'Fly As Me', 4: 'After Last Night (with Thundercat and Bootsy Collins)', 5: 'Smokin Out The Window', 6: 'Put On A Smile', 7: '777', 8: 'Skate', 9: 'Blast Off'}
+Fly As Me
+ 
+Printing Complete Album:
+
+Album Title: An Evening With Silk Sonic
+Artist: Silk Sonic
+Year: 2022
+Genre: R&amp;B, Soul
+
+Tracklist:
+1 - Silk Sonic Intro
+2 - Leave the Door Open
+3 - Fly As Me
+4 - After Last Night (with Thundercat and Bootsy Collins)
+5 - Smokin Out The Window
+6 - Put On A Smile
+7 - 777
+8 - Skate
+9 - Blast Off
+10 - Love's Train
 </pre>
 </div>
 </div>
