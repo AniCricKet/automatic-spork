@@ -577,7 +577,8 @@ Tracklist:
 
 <span class="c1"># Add the deluxe bonus track</span>
 <span class="n">aewss</span><span class="p">[</span><span class="s2">"tracks"</span><span class="p">]</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="mi">10</span><span class="p">:</span> <span class="s2">"Love's Train"</span><span class="p">})</span>
-
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Added Deluxe Song: Love's Train"</span><span class="p">)</span>
+      
 <span class="nb">print</span><span class="p">(</span><span class="s2">" "</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Printing Complete Album:</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
 
@@ -592,6 +593,16 @@ Tracklist:
 <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Tracklist:"</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">track_num</span><span class="p">,</span> <span class="n">track_title</span> <span class="ow">in</span> <span class="n">aewss</span><span class="p">[</span><span class="s2">"tracks"</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">track_num</span><span class="p">,</span> <span class="s2">"-"</span><span class="p">,</span> <span class="n">track_title</span><span class="p">)</span>
+
+
+<span class="n">random_track_number</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">aewss</span><span class="p">[</span><span class="s2">"tracks"</span><span class="p">]</span><span class="o">.</span><span class="n">keys</span><span class="p">()))</span>
+<span class="n">random_track</span> <span class="o">=</span> <span class="n">aewss</span><span class="p">[</span><span class="s2">"tracks"</span><span class="p">][</span><span class="n">random_track_number</span><span class="p">]</span>
+
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">" "</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Here's a song recommendation:"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">random_track_number</span><span class="p">,</span> <span class="s2">"-"</span><span class="p">,</span> <span class="n">random_track</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -607,6 +618,7 @@ Tracklist:
 <pre>{'title': 'An Evening With Silk Sonic', 'artist': 'Silk Sonic', 'year': 2022, 'genre': ['R&amp;B', 'Soul'], 'tracks': {1: 'Silk Sonic Intro', 2: 'Leave the Door Open', 3: 'Fly As Me', 4: 'After Last Night (with Thundercat and Bootsy Collins)', 5: 'Smokin Out The Window', 6: 'Put On A Smile', 7: '777', 8: 'Skate', 9: 'Blast Off'}}
 {1: 'Silk Sonic Intro', 2: 'Leave the Door Open', 3: 'Fly As Me', 4: 'After Last Night (with Thundercat and Bootsy Collins)', 5: 'Smokin Out The Window', 6: 'Put On A Smile', 7: '777', 8: 'Skate', 9: 'Blast Off'}
 Fly As Me
+Added Deluxe Song: Love's Train
  
 Printing Complete Album:
 
@@ -626,6 +638,9 @@ Tracklist:
 8 - Skate
 9 - Blast Off
 10 - Love's Train
+ 
+Here's a song recomendation:
+4 - After Last Night (with Thundercat and Bootsy Collins)
 </pre>
 </div>
 </div>
