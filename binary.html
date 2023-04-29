@@ -4,21 +4,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Binary Math | aniket</title>
+<title>Binary Math and Truth Tables | aniket</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Binary Math" />
+<meta property="og:title" content="Binary Math and Truth Tables" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="A Binary Math illustrative application using HTML, Liquid, and JavaScript." />
-<meta property="og:description" content="A Binary Math illustrative application using HTML, Liquid, and JavaScript." />
+<meta name="description" content="My CS portfolio, made with Jupyter Notebooks." />
+<meta property="og:description" content="My CS portfolio, made with Jupyter Notebooks." />
 <link rel="canonical" href="https://anicricket.github.io/automatic-spork/binary" />
 <meta property="og:url" content="https://anicricket.github.io/automatic-spork/binary" />
 <meta property="og:site_name" content="aniket" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2022-07-07T00:00:00-05:00" />
+<meta property="article:published_time" content="2023-04-26T00:00:00-05:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Binary Math" />
+<meta property="twitter:title" content="Binary Math and Truth Tables" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-07-07T00:00:00-05:00","datePublished":"2022-07-07T00:00:00-05:00","description":"A Binary Math illustrative application using HTML, Liquid, and JavaScript.","headline":"Binary Math","mainEntityOfPage":{"@type":"WebPage","@id":"https://anicricket.github.io/automatic-spork/binary"},"url":"https://anicricket.github.io/automatic-spork/binary"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-04-26T00:00:00-05:00","datePublished":"2023-04-26T00:00:00-05:00","description":"My CS portfolio, made with Jupyter Notebooks.","headline":"Binary Math and Truth Tables","mainEntityOfPage":{"@type":"WebPage","@id":"https://anicricket.github.io/automatic-spork/binary"},"url":"https://anicricket.github.io/automatic-spork/binary"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/automatic-spork/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://anicricket.github.io/automatic-spork/feed.xml" title="aniket" /><link rel="shortcut icon" type="image/x-icon" href="/automatic-spork/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -70,289 +70,348 @@ window.onload = wrap_img;
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <!-- Hack 1: add a character display to text when 8 bits, determine if printable or not printable -->
-<!-- Hack 2: change to 24 bits and add a color code and display color when 24 bits, think about display on this one -->
-<!-- Hack 3: do your own thing -->
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
-<div class="container bg-primary">
-    <header class="pb-3 mb-4 border-bottom border-primary text-dark">
-        <span class="fs-4">Binary Math with Conversions</span>
-    </header>
-    <div class="row justify-content-md-center">
-        <div class="col-8">
-            <table class="table">
-            <tr id="table">
-                <th>Plus</th>
-                <th>Binary</th>
-                <th>Octal</th>
-                <th>Hexadecimal</th>
-                <th>Decimal</th>
-                <th>Minus</th>
-            </tr>
-            <tr>
-                <td><button type="button" id="add1" onclick="add(1)">+1</button></td>
-                <td id="binary">00000000</td>
-                <td id="octal">0</td>
-                <td id="hexadecimal">0</td>
-                <td id="decimal">0</td>
-                <td><button type="button" id="sub1" onclick="add(-1)">-1</button></td>
-            </tr>
-            </table>
-        </div>
-        <div class="col-12">
-            
-             
-            <table class="table">
-            <tr>
-                
-                
-                <td><img class="img-responsive py-3" id="bulb0" src="/automatic-spork/images/bulb_off.png" alt="" width="40" height="Auto" />
-                    <button type="button" id="butt0" onclick="javascript:toggleBit(0)">Turn on</button>
-                </td>
-                
-                <td><img class="img-responsive py-3" id="bulb1" src="/automatic-spork/images/bulb_off.png" alt="" width="40" height="Auto" />
-                    <button type="button" id="butt1" onclick="javascript:toggleBit(1)">Turn on</button>
-                </td>
-                
-                <td><img class="img-responsive py-3" id="bulb2" src="/automatic-spork/images/bulb_off.png" alt="" width="40" height="Auto" />
-                    <button type="button" id="butt2" onclick="javascript:toggleBit(2)">Turn on</button>
-                </td>
-                
-                <td><img class="img-responsive py-3" id="bulb3" src="/automatic-spork/images/bulb_off.png" alt="" width="40" height="Auto" />
-                    <button type="button" id="butt3" onclick="javascript:toggleBit(3)">Turn on</button>
-                </td>
-                
-                <td><img class="img-responsive py-3" id="bulb4" src="/automatic-spork/images/bulb_off.png" alt="" width="40" height="Auto" />
-                    <button type="button" id="butt4" onclick="javascript:toggleBit(4)">Turn on</button>
-                </td>
-                
-                <td><img class="img-responsive py-3" id="bulb5" src="/automatic-spork/images/bulb_off.png" alt="" width="40" height="Auto" />
-                    <button type="button" id="butt5" onclick="javascript:toggleBit(5)">Turn on</button>
-                </td>
-                
-                <td><img class="img-responsive py-3" id="bulb6" src="/automatic-spork/images/bulb_off.png" alt="" width="40" height="Auto" />
-                    <button type="button" id="butt6" onclick="javascript:toggleBit(6)">Turn on</button>
-                </td>
-                
-                <td><img class="img-responsive py-3" id="bulb7" src="/automatic-spork/images/bulb_off.png" alt="" width="40" height="Auto" />
-                    <button type="button" id="butt7" onclick="javascript:toggleBit(7)">Turn on</button>
-                </td>
-                
-                <td><img class="img-responsive py-3" id="bulb8" src="/automatic-spork/images/bulb_off.png" alt="" width="40" height="Auto" />
-                    <button type="button" id="butt8" onclick="javascript:toggleBit(8)">Turn on</button>
-                </td>
-                
-                <td><img class="img-responsive py-3" id="bulb9" src="/automatic-spork/images/bulb_off.png" alt="" width="40" height="Auto" />
-                    <button type="button" id="butt9" onclick="javascript:toggleBit(9)">Turn on</button>
-                </td>
-                
-                <td><img class="img-responsive py-3" id="bulb10" src="/automatic-spork/images/bulb_off.png" alt="" width="40" height="Auto" />
-                    <button type="button" id="butt10" onclick="javascript:toggleBit(10)">Turn on</button>
-                </td>
-                
-                <td><img class="img-responsive py-3" id="bulb11" src="/automatic-spork/images/bulb_off.png" alt="" width="40" height="Auto" />
-                    <button type="button" id="butt11" onclick="javascript:toggleBit(11)">Turn on</button>
-                </td>
-                
-                <td><img class="img-responsive py-3" id="bulb12" src="/automatic-spork/images/bulb_off.png" alt="" width="40" height="Auto" />
-                    <button type="button" id="butt12" onclick="javascript:toggleBit(12)">Turn on</button>
-                </td>
-                
-                <td><img class="img-responsive py-3" id="bulb13" src="/automatic-spork/images/bulb_off.png" alt="" width="40" height="Auto" />
-                    <button type="button" id="butt13" onclick="javascript:toggleBit(13)">Turn on</button>
-                </td>
-                
-                <td><img class="img-responsive py-3" id="bulb14" src="/automatic-spork/images/bulb_off.png" alt="" width="40" height="Auto" />
-                    <button type="button" id="butt14" onclick="javascript:toggleBit(14)">Turn on</button>
-                </td>
-                
-                <td><img class="img-responsive py-3" id="bulb15" src="/automatic-spork/images/bulb_off.png" alt="" width="40" height="Auto" />
-                    <button type="button" id="butt15" onclick="javascript:toggleBit(15)">Turn on</button>
-                </td>
-                
-                <td><img class="img-responsive py-3" id="bulb16" src="/automatic-spork/images/bulb_off.png" alt="" width="40" height="Auto" />
-                    <button type="button" id="butt16" onclick="javascript:toggleBit(16)">Turn on</button>
-                </td>
-                
-                <td><img class="img-responsive py-3" id="bulb17" src="/automatic-spork/images/bulb_off.png" alt="" width="40" height="Auto" />
-                    <button type="button" id="butt17" onclick="javascript:toggleBit(17)">Turn on</button>
-                </td>
-                
-                <td><img class="img-responsive py-3" id="bulb18" src="/automatic-spork/images/bulb_off.png" alt="" width="40" height="Auto" />
-                    <button type="button" id="butt18" onclick="javascript:toggleBit(18)">Turn on</button>
-                </td>
-                
-                <td><img class="img-responsive py-3" id="bulb19" src="/automatic-spork/images/bulb_off.png" alt="" width="40" height="Auto" />
-                    <button type="button" id="butt19" onclick="javascript:toggleBit(19)">Turn on</button>
-                </td>
-                
-                <td><img class="img-responsive py-3" id="bulb20" src="/automatic-spork/images/bulb_off.png" alt="" width="40" height="Auto" />
-                    <button type="button" id="butt20" onclick="javascript:toggleBit(20)">Turn on</button>
-                </td>
-                
-                <td><img class="img-responsive py-3" id="bulb21" src="/automatic-spork/images/bulb_off.png" alt="" width="40" height="Auto" />
-                    <button type="button" id="butt21" onclick="javascript:toggleBit(21)">Turn on</button>
-                </td>
-                
-                <td><img class="img-responsive py-3" id="bulb22" src="/automatic-spork/images/bulb_off.png" alt="" width="40" height="Auto" />
-                    <button type="button" id="butt22" onclick="javascript:toggleBit(22)">Turn on</button>
-                </td>
-                
-                <td><img class="img-responsive py-3" id="bulb23" src="/automatic-spork/images/bulb_off.png" alt="" width="40" height="Auto" />
-                    <button type="button" id="butt23" onclick="javascript:toggleBit(23)">Turn on</button>
-                </td>
-                
-            </tr>
-            <tr>
-                
-                
-                <td><input type="text" id="digit0" value="0" size="1" readonly="" /></td>
-                
-                <td><input type="text" id="digit1" value="0" size="1" readonly="" /></td>
-                
-                <td><input type="text" id="digit2" value="0" size="1" readonly="" /></td>
-                
-                <td><input type="text" id="digit3" value="0" size="1" readonly="" /></td>
-                
-                <td><input type="text" id="digit4" value="0" size="1" readonly="" /></td>
-                
-                <td><input type="text" id="digit5" value="0" size="1" readonly="" /></td>
-                
-                <td><input type="text" id="digit6" value="0" size="1" readonly="" /></td>
-                
-                <td><input type="text" id="digit7" value="0" size="1" readonly="" /></td>
-                
-                <td><input type="text" id="digit8" value="0" size="1" readonly="" /></td>
-                
-                <td><input type="text" id="digit9" value="0" size="1" readonly="" /></td>
-                
-                <td><input type="text" id="digit10" value="0" size="1" readonly="" /></td>
-                
-                <td><input type="text" id="digit11" value="0" size="1" readonly="" /></td>
-                
-                <td><input type="text" id="digit12" value="0" size="1" readonly="" /></td>
-                
-                <td><input type="text" id="digit13" value="0" size="1" readonly="" /></td>
-                
-                <td><input type="text" id="digit14" value="0" size="1" readonly="" /></td>
-                
-                <td><input type="text" id="digit15" value="0" size="1" readonly="" /></td>
-                
-                <td><input type="text" id="digit16" value="0" size="1" readonly="" /></td>
-                
-                <td><input type="text" id="digit17" value="0" size="1" readonly="" /></td>
-                
-                <td><input type="text" id="digit18" value="0" size="1" readonly="" /></td>
-                
-                <td><input type="text" id="digit19" value="0" size="1" readonly="" /></td>
-                
-                <td><input type="text" id="digit20" value="0" size="1" readonly="" /></td>
-                
-                <td><input type="text" id="digit21" value="0" size="1" readonly="" /></td>
-                
-                <td><input type="text" id="digit22" value="0" size="1" readonly="" /></td>
-                
-                <td><input type="text" id="digit23" value="0" size="1" readonly="" /></td>
-                
-            </tr>
-            </table>
-        </div>
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Binary Math and Truth Tables</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2023-04-26T00:00:00-05:00" itemprop="datePublished">
+        Apr 26, 2023
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      4 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/automatic-spork/categories/#student">student</a>
+        
+      
+      </p>
+    
+
+    
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h1"><a href="#Binary-Math-Hacks">Binary Math Hacks </a></li>
+<li class="toc-entry toc-h1"><a href="#Binary-Logic-Hacks">Binary Logic Hacks </a></li>
+<li class="toc-entry toc-h1"><a href="#Logic-Gates-Hacks">Logic Gates Hacks </a></li>
+<li class="toc-entry toc-h1"><a href="#Fetching-Hacks">Fetching Hacks </a></li>
+<li class="toc-entry toc-h1"><a href="#Github-Pages-Hacks">Github Pages Hacks </a></li>
+<li class="toc-entry toc-h1"><a href="#API-Hacks">API Hacks </a></li>
+</ul><!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2023-04-26-truthtablehacks.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Binary-Math-Hacks">
+<a class="anchor" href="#Binary-Math-Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Binary Math Hacks<a class="anchor-link" href="#Binary-Math-Hacks"> </a>
+</h1>
+<p>Binary subtraction involves subtracting the smaller number from the larger using specific rules: if the digit being subtracted is 0, the result is the same as the minuend digit; if the digit being subtracted is 1 and the minuend digit is also 1, the result is 0; if the digit being subtracted is 1 and the minuend digit is 0, we borrow 1 from the next digit in the minuend, subtracting it from the minuend digit, with the result being 1. Binary multiplication involves multiplying each digit of the second number by each digit of the first number, shifted one place to the left for each digit, and then adding up all the results to get the final product. Binary division involves dividing the dividend by the divisor, starting from the left, and writing the quotient for each step. If the dividend is smaller than the divisor, write a 0 in the quotient and bring down the next digit of the dividend. If the dividend is larger than or equal to the divisor, divide the dividend by the divisor and write the quotient in the quotient column. Repeat the process until there are no more digits to bring down.</p>
+<p>Exercises:</p>
+<p>1-1 = 0</p>
+<p>1-0 = 1</p>
+<p>0-1 = 1</p>
+<p>0-0 = 0</p>
+<p>1x1 = 1</p>
+<p>1x0 = 0</p>
+<p>0x1 = 0</p>
+<p>0x0 = 0</p>
+<p>1/1 = 1</p>
+<p>0/1 = 0</p>
+<p>Here's a code segment which takes 2 binary numbers, subtracts them, and returns it in both decimal and binary.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">subtract_binary</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">):</span>
+    <span class="n">diff</span> <span class="o">=</span> <span class="nb">bin</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="o">-</span> <span class="nb">int</span><span class="p">(</span><span class="n">num2</span><span class="p">,</span> <span class="mi">2</span><span class="p">))[</span><span class="mi">2</span><span class="p">:]</span>
+    <span class="n">dec_diff</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">diff</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">diff</span><span class="p">,</span> <span class="n">dec_diff</span>
+
+<span class="n">num1</span> <span class="o">=</span> <span class="s1">'101'</span>
+<span class="c1"># 101 in decimal = 5</span>
+<span class="n">num2</span> <span class="o">=</span> <span class="s1">'11'</span>
+<span class="c1"># 11 in decimal = 3</span>
+<span class="n">diff</span><span class="p">,</span> <span class="n">dec_diff</span> <span class="o">=</span> <span class="n">subtract_binary</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Here's the difference in binary:"</span><span class="p">,</span> <span class="n">diff</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Here's the difference in decimal:"</span><span class="p">,</span> <span class="n">dec_diff</span><span class="p">)</span>
+</pre></div>
+
     </div>
 </div>
+</div>
 
-<script>
-    const BITS = 24;
-    const MAX = 2 ** BITS - 1;
-    const MSG_ON = "Turn on";
-    const IMAGE_ON = "/automatic-spork/images/bulb_on.gif";
-    const MSG_OFF = "Turn off";
-    const IMAGE_OFF = "/automatic-spork/images/bulb_off.png"
+<div class="output_wrapper">
+<div class="output">
 
-    // return string with current value of each bit
-    function getBits() {
-        let bits = "";
-        for(let i = 0; i < BITS; i++) {
-        bits = bits + document.getElementById('digit' + i).value;
-        }
-        return bits;
-    }
-    // setter for DOM values
-    function setConversions(binary) {
-        document.getElementById('binary').innerHTML = binary;
-        // Octal conversion
-        document.getElementById('octal').innerHTML = parseInt(binary, 2).toString(8);
-        // Hexadecimal conversion
-        document.getElementById('hexadecimal').innerHTML = parseInt(binary, 2).toString(16);
-        // Decimal conversion
-        document.getElementById('decimal').innerHTML = parseInt(binary, 2).toString();
-    }
-    //
-    function decimal_2_base(decimal, base) {
-        let conversion = "";
-        // loop to convert to base
-        do {
-        let digit = decimal % base;
-        conversion = "" + digit + conversion; // what does this do?
-        decimal = ~~(decimal / base);         // what does this do?
-        } while (decimal > 0);                  // why while at the end? what is ~~?
-        // loop to pad with zeros
-        if (base === 2) {                        // only pad for binary conversions
-        for (let i = 0; conversion.length < BITS; i++) {
-            conversion = "0" + conversion;
-        }
-        }
-        return conversion;
-    }
+<div class="output_area">
 
-    // toggle selected bit and recalculate
-    function toggleBit(i) {
-        //alert("Digit action: " + i );
-        const dig = document.getElementById('digit' + i);
-        const image = document.getElementById('bulb' + i);
-        const butt = document.getElementById('butt' + i);
-        // Change digit and visual
-        if (image.src.match(IMAGE_ON)) {
-        dig.value = 0;
-        image.src = IMAGE_OFF;
-        butt.innerHTML = MSG_ON;
-        } else {
-        dig.value = 1;
-        image.src = IMAGE_ON;
-        butt.innerHTML = MSG_OFF;
-        }
-        // Binary numbers
-        const binary = getBits();
-        setConversions(binary);
-    }
-    // add is positive integer, subtract is negative integer
-    function add(n) {
-        let binary = getBits();
-        // convert to decimal and do math
-        let decimal = parseInt(binary, 2);
-        if (n > 0) {  // PLUS
-        decimal = MAX === decimal ? 0 : decimal += n; // OVERFLOW or PLUS
-        } else  {     // MINUS
-        decimal = 0 === decimal ? MAX : decimal += n; // OVERFLOW or MINUS
-        }
-        // convert the result back to binary
-        binary = decimal_2_base(decimal, 2);
-        // update conversions
-        setConversions(binary);
-        // update bits
-        for (let i = 0; i < binary.length; i++) {
-        let digit = binary.substr(i, 1);
-        document.getElementById('digit' + i).value = digit;
-        if (digit === "1") {
-            document.getElementById('bulb' + i).src = IMAGE_ON;
-            document.getElementById('butt' + i).innerHTML = MSG_OFF;
-        } else {
-            document.getElementById('bulb' + i).src = IMAGE_OFF;
-            document.getElementById('butt' + i).innerHTML = MSG_ON;
-        }
-        }
-    }
-</script>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Here's the difference in binary: 10
+Here's the difference in decimal: 2
+</pre>
+</div>
+</div>
 
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Binary-Logic-Hacks">
+<a class="anchor" href="#Binary-Logic-Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Binary Logic Hacks<a class="anchor-link" href="#Binary-Logic-Hacks"> </a>
+</h1>
+<p><img src="https://user-images.githubusercontent.com/91163802/235279821-810c1a78-dd92-42b2-97f8-df190e8b06a8.png" alt="image"></p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'random_numbers_1000.csv'</span><span class="p">)</span>
+<span class="n">mean</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">'number'</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"The mean of the data is </span><span class="si">{</span><span class="n">mean</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+
+
+<span class="n">filtered_sum</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">df</span><span class="p">[</span><span class="s1">'number'</span><span class="p">]:</span>
+    <span class="k">if</span> <span class="n">num</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">continue</span>
+    <span class="k">elif</span> <span class="n">num</span> <span class="o">%</span> <span class="mi">5</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">num</span> <span class="o">*=</span> <span class="mi">2</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">pass</span>
+    <span class="n">filtered_sum</span> <span class="o">+=</span> <span class="n">num</span> 
+    <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
+
+<span class="k">if</span> <span class="n">count</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="n">filtered_mean</span> <span class="o">=</span> <span class="n">filtered_sum</span> <span class="o">/</span> <span class="n">count</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">filtered_mean</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"The mean of the filtered data is </span><span class="si">{</span><span class="n">filtered_mean</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">count</span><span class="si">}</span><span class="s2"> numbers meet the first criteria"</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The mean of the data is 0.4904628425744203
+The mean of the filtered data is 0
+0 numbers meet the first criteria
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Logic-Gates-Hacks">
+<a class="anchor" href="#Logic-Gates-Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Logic Gates Hacks<a class="anchor-link" href="#Logic-Gates-Hacks"> </a>
+</h1>
+<p>Logic gates are the basic building blocks of digital circuits that can be combined to implement Boolean functions and perform basic computer operations like addition, subtraction, multiplication, and division.</p>
+<p>Boolean operations are operations that work on binary values, while logic gates are physical devices that implement Boolean functions in digital circuits. In simpler terms, Boolean operations are abstract concepts, while logic gates are tangible components used to build digital circuits that perform Boolean operations.</p>
+<p><img src="https://user-images.githubusercontent.com/91163802/235264355-1e536924-d063-44fb-95ee-2dc4c8547fa7.png" alt="image"></p>
+<h1 id="Fetching-Hacks">
+<a class="anchor" href="#Fetching-Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Fetching Hacks<a class="anchor-link" href="#Fetching-Hacks"> </a>
+</h1>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">{</span><span class="s2">"User ID"</span><span class="p">:</span> <span class="mi">101</span><span class="p">,</span> <span class="s2">"Username"</span><span class="p">:</span> <span class="s2">"johndoe"</span><span class="p">,</span> <span class="s2">"Email"</span><span class="p">:</span> <span class="s2">"johndoe@example.com"</span><span class="p">,</span> <span class="s2">"Age"</span><span class="p">:</span> <span class="mi">25</span><span class="p">,</span> <span class="s2">"Country"</span><span class="p">:</span> <span class="s2">"United States"</span><span class="p">},</span>
+    <span class="p">{</span><span class="s2">"User ID"</span><span class="p">:</span> <span class="mi">102</span><span class="p">,</span> <span class="s2">"Username"</span><span class="p">:</span> <span class="s2">"janedoe"</span><span class="p">,</span> <span class="s2">"Email"</span><span class="p">:</span> <span class="s2">"janedoe@example.com"</span><span class="p">,</span> <span class="s2">"Age"</span><span class="p">:</span> <span class="mi">31</span><span class="p">,</span> <span class="s2">"Country"</span><span class="p">:</span> <span class="s2">"Canada"</span><span class="p">},</span>
+    <span class="p">{</span><span class="s2">"User ID"</span><span class="p">:</span> <span class="mi">103</span><span class="p">,</span> <span class="s2">"Username"</span><span class="p">:</span> <span class="s2">"bobsmith"</span><span class="p">,</span> <span class="s2">"Email"</span><span class="p">:</span> <span class="s2">"bobsmith@example.com"</span><span class="p">,</span> <span class="s2">"Age"</span><span class="p">:</span> <span class="mi">45</span><span class="p">,</span> <span class="s2">"Country"</span><span class="p">:</span> <span class="s2">"United Kingdom"</span><span class="p">},</span>
+    <span class="p">{</span><span class="s2">"User ID"</span><span class="p">:</span> <span class="mi">104</span><span class="p">,</span> <span class="s2">"Username"</span><span class="p">:</span> <span class="s2">"sarahjane"</span><span class="p">,</span> <span class="s2">"Email"</span><span class="p">:</span> <span class="s2">"sarahjane@example.com"</span><span class="p">,</span> <span class="s2">"Age"</span><span class="p">:</span> <span class="mi">27</span><span class="p">,</span> <span class="s2">"Country"</span><span class="p">:</span> <span class="s2">"Australia"</span><span class="p">}</span>
+<span class="p">]</span>
+
+<span class="k">def</span> <span class="nf">filter_by_age</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">min_age</span><span class="p">,</span> <span class="n">max_age</span><span class="p">):</span>
+    <span class="n">filtered_data</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
+        <span class="n">age</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="s2">"Age"</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">age</span> <span class="o">&gt;=</span> <span class="n">min_age</span> <span class="ow">and</span> <span class="n">age</span> <span class="o">&lt;=</span> <span class="n">max_age</span><span class="p">:</span>
+            <span class="n">filtered_data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">filtered_data</span>
+
+<span class="n">filtered_data</span> <span class="o">=</span> <span class="n">filter_by_age</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">35</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">filtered_data</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[{'User ID': 101, 'Username': 'johndoe', 'Email': 'johndoe@example.com', 'Age': 25, 'Country': 'United States'}, {'User ID': 102, 'Username': 'janedoe', 'Email': 'janedoe@example.com', 'Age': 31, 'Country': 'Canada'}, {'User ID': 104, 'Username': 'sarahjane', 'Email': 'sarahjane@example.com', 'Age': 27, 'Country': 'Australia'}]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Github-Pages-Hacks">
+<a class="anchor" href="#Github-Pages-Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Github Pages Hacks<a class="anchor-link" href="#Github-Pages-Hacks"> </a>
+</h1>
+<p>One hosting service website that is different from Github is GitLab. GitLab is a hosting service website that offers source code management and other DevOps-related features. One of its unique features is the integrated continuous integration and deployment (CI/CD) functionality, which allows users to automate the building, testing, and deployment of their applications. This feature helps teams save time and resources while improving the quality and reliability of their software.</p>
+<h1 id="API-Hacks">
+<a class="anchor" href="#API-Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>API Hacks<a class="anchor-link" href="#API-Hacks"> </a>
+</h1>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">'Name'</span><span class="p">:</span> <span class="p">[</span><span class="s1">'Dillon'</span><span class="p">,</span> <span class="s1">'Noor'</span><span class="p">,</span> <span class="s1">'Steven'</span><span class="p">,</span> <span class="s1">'Lucas'</span><span class="p">,</span> <span class="s1">'Harsha'</span><span class="p">,</span> <span class="s1">'Varalu'</span><span class="p">,</span> <span class="s1">'Ryan'</span><span class="p">,</span> <span class="s1">'Emaad'</span><span class="p">],</span>
+    <span class="s1">'Age'</span><span class="p">:</span> <span class="p">[</span><span class="mi">24</span><span class="p">,</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">42</span><span class="p">,</span> <span class="mi">27</span><span class="p">,</span> <span class="mi">29</span><span class="p">,</span> <span class="mi">26</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">15</span><span class="p">],</span>
+    <span class="s1">'Gender'</span><span class="p">:</span> <span class="p">[</span><span class="s1">'M'</span><span class="p">,</span> <span class="s1">'M'</span><span class="p">,</span> <span class="s1">'M'</span><span class="p">,</span> <span class="s1">'M'</span><span class="p">,</span> <span class="s1">'F'</span><span class="p">,</span> <span class="s1">'F'</span><span class="p">,</span> <span class="s1">'F'</span><span class="p">,</span> <span class="s1">'F'</span><span class="p">],</span>
+    <span class="s1">'Grade'</span><span class="p">:</span> <span class="p">[</span><span class="s1">'A'</span><span class="p">,</span> <span class="s1">'B'</span><span class="p">,</span> <span class="s1">'A'</span><span class="p">,</span> <span class="s1">'D'</span><span class="p">,</span> <span class="s1">'C'</span><span class="p">,</span> <span class="s1">'F'</span><span class="p">,</span> <span class="s1">'B'</span><span class="p">,</span> <span class="s1">'A'</span><span class="p">]</span>
+<span class="p">}</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+
+<span class="c1"># Filter by Age greater than 30</span>
+<span class="n">age_filter</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">'Age'</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">30</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">age_filter</span><span class="p">)</span>
+
+<span class="c1"># Filter by Gender is 'F'</span>
+<span class="n">gender_filter</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">'Gender'</span><span class="p">]</span> <span class="o">==</span> <span class="s1">'F'</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">gender_filter</span><span class="p">)</span>
+
+<span class="c1"># Filter by Grade is 'A' or 'B'</span>
+<span class="n">grade_filter</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">'Grade'</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="s1">'A'</span><span class="p">,</span> <span class="s1">'B'</span><span class="p">])]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">grade_filter</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>     Name  Age Gender Grade
+0  Dillon   24      M     A
+1    Noor   31      M     B
+2  Steven   42      M     A
+3   Lucas   27      M     D
+4  Harsha   29      F     C
+5  Varalu   26      F     F
+6    Ryan   90      F     B
+7   Emaad   15      F     A
+     Name  Age Gender Grade
+1    Noor   31      M     B
+2  Steven   42      M     A
+6    Ryan   90      F     B
+     Name  Age Gender Grade
+4  Harsha   29      F     C
+5  Varalu   26      F     F
+6    Ryan   90      F     B
+7   Emaad   15      F     A
+     Name  Age Gender Grade
+0  Dillon   24      M     A
+1    Noor   31      M     B
+2  Steven   42      M     A
+6    Ryan   90      F     B
+7   Emaad   15      F     A
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+</div>
+
+
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="AniCricKet/automatic-spork"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/automatic-spork/binary" hidden></a>
+</article>
 
       </div>
     </main><footer class="site-footer h-card">
