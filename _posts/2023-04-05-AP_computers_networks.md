@@ -97,6 +97,8 @@ Define or describe usage of Computer using Computer Programs. Pictures are prefe
     +-----------+         +-----------+         +-----------+
 ```
 
+![]({{ site.baseurl }}/images/networkdiagram.png)
+
 The "http" layer is an application layer protocol in the TCP/IP stack, used for ***communication between web browsers and web servers***. It is the protocol used for transmitting data over the World Wide Web.
 
 The "transport" layer (TCP) is responsible for providing reliable data transfer between applications running on different hosts.  The TCP protocol segments the data into smaller ***chunks called "segments"***. Each segment contains a sequence number that identifies its position in the original stream of data, as well as other control information such as source and destination port numbers, and checksums for error detection.
