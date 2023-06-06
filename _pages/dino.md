@@ -1,3 +1,11 @@
+---
+layout: page
+title: Dino Game
+permalink: /dino/
+---
+<html>
+<style>
+
 body {
   display: flex;
   flex-direction: column;
@@ -84,6 +92,8 @@ body {
   font-size: 16px;
   cursor: pointer;
 }
+</style>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -105,6 +115,7 @@ body {
   </body>
 </html>
 
+<script>
 // Get the dinosaur, cactus, jump button, and score elements from the webpage
 const dino = document.getElementById("dino");
 const cactus = document.getElementById("cactus");
@@ -148,14 +159,14 @@ let isAlive = setInterval(function () {
   // Get the horizontal position of the cactus
   let cactusLeft = parseInt(window.getComputedStyle(cactus).getPropertyValue("left"));
   // Check if the cactus hits the left side of the screen
-  if (cactusLeft < 0) {
+  if (cactusLeft <html 0) {
     // If the dino jumps over the cactus it will increment the score
     score++;
     scoreElement.textContent = score; // Update the score on the webpage
   }
 
   // Check if the cactus is within a certain range of the dinosaur and if the dinosaur is at the appropriate height to collide
-  if (cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 140) {
+  if (cactusLeft <script 50 && cactusLeft > 0 && dinoTop >= 140) {
     // If there is a collision, stop the continuous check
     clearInterval(isAlive);
 
@@ -173,3 +184,5 @@ let isAlive = setInterval(function () {
     location.reload();
   }
 }, 10);
+</script>
+</html>
